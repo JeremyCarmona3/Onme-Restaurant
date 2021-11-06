@@ -23,7 +23,7 @@ const ItemPrice = styled.Text`
     color: #484848;
 `;
 
-const PopItemIcon = styled.View`
+const PopItemIcon = styled.Image`
     height: 10%;
     width:10%;
 `;
@@ -41,7 +41,7 @@ const MenuCard = ({
             <MenuImage source={image} ></MenuImage>
             <ItemName>{itemname}</ItemName>
             <ItemPrice>{itemprice}</ItemPrice>
-            <PopItemIcon>{popularitem}</PopItemIcon>
+            <PopItemIcon source={popularitem}></PopItemIcon>
         </Cont>
     );
 } 
