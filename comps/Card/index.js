@@ -6,6 +6,7 @@ const Cont = styled.TouchableOpacity`
     height:269px;
     background-color: white;
     border-radius: 15px;
+
 `;
 
 const MenuImage = styled.ImageBackground`
@@ -16,16 +17,22 @@ const MenuImage = styled.ImageBackground`
 const ItemName = styled.Text`
     font-size: 18px;
     color: black;
+    margin-left: 5%;
+    align-self: flex-start;
 `;
 
 const ItemPrice = styled.Text`
     font-size: 18px;
     color: #484848;
+    margin-left: 5%;
+    align-self: flex-start;
 `;
 
 const PopItemIcon = styled.Image`
     height: 10%;
-    width:10%;
+    width:13%;
+    align-self: flex-end;
+    margin-right: 5%;
 `;
 
 
