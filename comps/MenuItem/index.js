@@ -17,7 +17,7 @@ const InputTextBox = styled.View`
     height: 57px;
     background: #FFFFFF;
     borderRadius: 10px;
-    borderColor: #EEEEEE;
+    border: black;
     borderStyle: solid;
     justify-content: center;
 `
