@@ -5,6 +5,8 @@ import NoteSection from './comps/NoteSection';
 import OrderDisplay from './comps/OrderDisplay';
 import QtyItem from './comps/QtyItem';
 import MeunItem from './comps/MenuItem';
+import OpenText from './comps/OpenText';
+
 
 // export {default} from './storybook'; 
 
@@ -14,6 +16,9 @@ export default function App() {
   return (
     <View style={styles.container}>
       <MeunItem/>
+      <QtyItem/>
+      <OpenText/>
+
       <StatusBar style="auto" />
     </View>
   );
