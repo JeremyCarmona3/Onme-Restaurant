@@ -12,6 +12,7 @@ import AddItemCard from '../../../comps/AddItemCard';
 import OrderNumberCard from '../../../comps/OrderNumberCard';
 import OrderCosts from '../../../comps/OrderCosts';
 import OrderStatsCard from '../../../comps/OrderStatsCard';
+import NavBar from '../../../comps/navbar_Min';
 
 storiesOf('Comps', module)
   .addDecorator((getStory) => <CenterView>{getStory()}</CenterView>)
@@ -38,6 +39,10 @@ storiesOf('Comps', module)
 
   .add('Buttons', () => (
     <Buttons/>
+))
+
+.add('Navigation', () => (
+  <NavBar/>
 ));
 
  
