@@ -7,6 +7,7 @@ import Button from '.';
 import CenterView from '../CenterView';
 
 import MenuCard from '../../../comps/Card';
+import ButtonGroup from '../../../comps/ButtonGroup';
 import Buttons from '../../../comps/Button';
 import AddItemCard from '../../../comps/AddItemCard';
 import OrderNumberCard from '../../../comps/OrderNumberCard';
@@ -34,6 +35,10 @@ storiesOf('Comps', module)
 
 .add('OrderCosts', () => (
   <OrderCosts/>
+))
+
+.add('ButtonGroup', () => (
+  <ButtonGroup/>
 ))
 
   .add('Buttons', () => (
