@@ -24,9 +24,9 @@ const NewOrder = ({
 }) => {
     return (
         <NewOrder 
-            newOrderSize
-            newOrderWeight
-            newOrderColor
+            orderSize={newOrderSize}
+            orderWeight={newOrderWeight}
+            orderColor={newOrderColor}
         >
            <newOrderText>{newOrderText}</newOrderText>
            <Line>{line}</Line>

@@ -8,7 +8,12 @@ import MeunItem from './comps/MenuItem';
 import OpenText from './comps/OpenText';
 import NewOrder from './comps/NewOrder';
 
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+import Dashboard from './pages';
+
+const Stack = createNativeStackNavigator();
 
 // export {default} from './storybook'; 
 
@@ -16,14 +21,15 @@ import NewOrder from './comps/NewOrder';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <MeunItem/>
+    <NavigationContainer style={styles.container}>
+      <Stack.Navigator>
+        <Stack.Screen name="Dashboard" component={Dashboard} />
+      </Stack.Navigator>
+      {/* <MeunItem/>
       <QtyItem/>
       <OpenText/>
-      <NewOrder/>
-
-      <StatusBar style="auto" />
-    </View>
+      <NewOrder/> */}
+    </NavigationContainer>
   );
 }
 
