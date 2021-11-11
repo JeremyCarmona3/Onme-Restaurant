@@ -9,6 +9,8 @@ const Cont = styled.TouchableOpacity`
     justify-content: center;
     padding: 5%;
     flex-direction: column;
+
+    box-shadow: 10px 5px 5px grey;
     
 `;
 
@@ -16,6 +18,7 @@ const TotalNumberCus = styled.Text`
     color: #8A8A8A;
     font-weight: bold;
     font-size: 15px;
+    margin-bottom: 5%;
 `;
 
 const Number = styled.Text`
@@ -27,6 +30,7 @@ const Bar = styled.View`
     width:133px;
     height:6px;
     background-color:#FE4370 ;
+    margin-top: 5%;
 `;
 
 

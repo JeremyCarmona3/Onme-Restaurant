@@ -1,15 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View , SafeAreaView, ScrollView } from 'react-native';
-
 import styled from 'styled-components/native';
 
-import NewOrder from '../comps/NewOrder';
+import NavBar from '../comps/NavBar';
 
-const DashCont = styled.View`
-  width: 100px;
-  height: 100px;
-  background-color: #fad;
+const Cont = styled.View`
+    display: flex;
 `;
 
 export default function Dashboard({navigation}) {
@@ -17,9 +14,11 @@ export default function Dashboard({navigation}) {
       <SafeAreaView style={styles.container}>
         <StatusBar style="auto" />
             {/* <NewOrder></NewOrder> */}
-            <DashCont>
-              <Text>Hello</Text>
-            </DashCont>
+
+            <Cont>
+                <NavBar/>
+            </Cont>
+            
       </SafeAreaView>
     );
   }

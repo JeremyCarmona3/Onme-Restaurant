@@ -12,7 +12,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Dashboard from './pages/dashboard';
-import MenuBoard from '.pages/menuBoard';
+import Menupage1 from './pages/dashboard';
+
 //note(alicia):import ___ from..___ then <stackscreem name... comment out other pages to see one page at a time (until the routes are done)
 const Stack = createNativeStackNavigator();
 
@@ -24,8 +25,10 @@ export default function App() {
   return (
     <NavigationContainer style={styles.container}>
       <Stack.Navigator>
+      
         <Stack.Screen name="Dashboard" component={Dashboard} />
-        <Stack.Screen name="Menu Board" component={MenuBoard} />
+       
+        
       </Stack.Navigator>
       {/* <MeunItem/>
       <QtyItem/>

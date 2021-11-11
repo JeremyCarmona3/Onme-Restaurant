@@ -3,10 +3,9 @@ import styled from 'styled-components/native';
 import { StyleSheet, Text, View } from 'react-native';
 
 const Cont = styled.View`
-    font-size: ${props => props.openTextSize};
-    font-weight: ${props => props.openTextWeight};
-    color: ${props => props.openTextColor};    
+   display :flex ;
 `;
+
 
 const OpenText = ({
    openText = "Open",
@@ -15,13 +14,16 @@ const OpenText = ({
    openTextColor = "black"
 }) => {
     return (
+
+        <Cont>
         <OpenText 
-          openTextSize={openTextSize}
-          openTextWeight={openTextWeight}
-          openTextColor={openTextColor}
+        //   openTextSize={openTextSize}
+        //   openTextWeight={openTextWeight}
+        //   openTextColor={openTextColor}
         >
            {openText}
         </OpenText>
+        </Cont>
     );
 }
 
