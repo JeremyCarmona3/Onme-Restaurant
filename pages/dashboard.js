@@ -7,39 +7,32 @@ import styled from 'styled-components/native';
 import NavBar from '../comps/NavBar';
 import OpenText from '../comps/OpenText';
 import OrderStatsCard from '../comps/OrderStatsCard';
-//import NewOrder from '../comps/NewOrder';
-
-
-// const DashCont = styled.View`
-//   width: 100px;
-//   height: 100px;
-//   background-color: #fad;
-// `;
+import NewOrderLine from '../comps/NewOrderLine';
+import PinkOrderBar from '../comps/PinkOrderBar';
 
 const DashCont = styled.View`
 flex-direction: row;
 `;
 
-const Navigation = styled.View`
-  display: flex;
-  max-height: 100%;
- 
-`;
-
 const Cards = styled.View`
   flex-direction: row;
+  justify-content: space-between;
 `;
 
-// const StatsLine = styled.View`
-//   margin-top:10% ;
-// `;
+const RightCol = styled.View`
+  flex-direction: column;
+  margin: 6%;
+  justify-content: space-between;
+`;
+const MiddleSection = styled.View`
+`;
 
+const NewOrderLine2 =styled.View`
+  margin-bottom: 3%;
+`;
 
-// const HeaderText = styled.View`
-//   display:flex;
-//   align-items: flex-start;
-// `;
-
+const BottomSection = styled.View`
+`;
 
 
 export default function Dashboard({navigation}) {
@@ -48,21 +41,32 @@ export default function Dashboard({navigation}) {
         <StatusBar style="auto" />
             {/* <NewOrder></NewOrder> */}
             <DashCont>
-
-              <Navigation>
-               <NavBar/>
-              </Navigation>
-
-              {/* <StatsLine>
-                <NewOrder/>
-              </StatsLine> */}
+              <NavBar/>
 
               
-              <Cards>
-                <OrderStatsCard totnumcus="SALES SUMMARY" num="$100"/>
-                <OrderStatsCard /> 
-              </Cards>
+              <RightCol>
+              <OpenText/>
 
+              <MiddleSection>
+                <NewOrderLine2>
+                  <NewOrderLine/>
+                </NewOrderLine2>
+                <PinkOrderBar/>
+              </MiddleSection>
+
+              <BottomSection>
+              <NewOrderLine2>
+                <NewOrderLine headingtext="Order Statistics"/>
+              </NewOrderLine2>
+
+                <Cards>
+                 <OrderStatsCard totnumcus="SALES SUMMARY" num="$100"/>
+                  <OrderStatsCard /> 
+                </Cards>
+              </BottomSection>
+
+              </RightCol>
+             
             </DashCont>
       </SafeAreaView>
     );
