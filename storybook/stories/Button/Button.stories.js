@@ -12,6 +12,10 @@ import AddItemCard from '../../../comps/AddItemCard';
 import OrderNumberCard from '../../../comps/OrderNumberCard';
 import OrderCosts from '../../../comps/OrderCosts';
 import OrderStatsCard from '../../../comps/OrderStatsCard';
+import MeunItem from '../../../comps/MenuItem';
+import QtyItem from '../../../comps/QtyItem';
+import OpenText from '../../../comps/OpenText';
+import NewOrder from '../../../comps/NewOrder';
 
 storiesOf('Comps', module)
   .addDecorator((getStory) => <CenterView>{getStory()}</CenterView>)
@@ -36,8 +40,26 @@ storiesOf('Comps', module)
   <OrderCosts/>
 ))
 
-  .add('Buttons', () => (
-    <Buttons/>
+.add('Buttons', () => (
+  <Buttons/>
+))
+.add('MenuItem', () => (
+  <MeunItem />
+))
+.add('QtyItem', () => (
+  <QtyItem />
+))
+.add('OpenText', () => (
+  <OpenText />
+))
+.add('NewOrder', () => (
+  <NewOrder />
 ));
+
+
+{/* <MeunItem/>
+<QtyItem/>
+<OpenText/>
+<NewOrder/> */}
 
  

@@ -16,7 +16,7 @@ export default function Dashboard({navigation}) {
     return (
       <SafeAreaView style={styles.container}>
         <StatusBar style="auto" />
-            <NewOrder></NewOrder>
+            {/* <NewOrder></NewOrder> */}
             <DashCont>
               <Text>Hello</Text>
             </DashCont>

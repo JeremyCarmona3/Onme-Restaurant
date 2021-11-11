@@ -15,23 +15,23 @@ import Dashboard from './pages';
 
 const Stack = createNativeStackNavigator();
 
-// export {default} from './storybook'; 
+export {default} from './storybook'; 
 
 
 
-export default function App() {
-  return (
-    <NavigationContainer style={styles.container}>
-      <Stack.Navigator>
-        <Stack.Screen name="Dashboard" component={Dashboard} />
-      </Stack.Navigator>
-      {/* <MeunItem/>
-      <QtyItem/>
-      <OpenText/>
-      <NewOrder/> */}
-    </NavigationContainer>
-  );
-}
+// export default function App() {
+//   return (
+//     <NavigationContainer style={styles.container}>
+//       <Stack.Navigator>
+//         <Stack.Screen name="Dashboard" component={Dashboard} />
+//       </Stack.Navigator>
+//       {/* <MeunItem/>
+//       <QtyItem/>
+//       <OpenText/>
+//       <NewOrder/> */}
+//     </NavigationContainer>
+//   );
+// }
 
 const styles = StyleSheet.create({
   container: {
