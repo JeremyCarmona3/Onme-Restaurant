@@ -4,34 +4,36 @@ import { StyleSheet, Text, View } from 'react-native';
 import NoteSection from './comps/NoteSection';
 import OrderDisplay from './comps/OrderDisplay';
 import QtyItem from './comps/QtyItem';
-import MeunItem from './comps/MenuItem';
+import MenuItem from './comps/MenuItem';
 import OpenText from './comps/OpenText';
 import NewOrder from './comps/NewOrder';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import Dashboard from './pages';
-
+import Dashboard from './pages/dashboard';
+import MenuBoard from '.pages/menuBoard';
+//note(alicia):import ___ from..___ then <stackscreem name... comment out other pages to see one page at a time (until the routes are done)
 const Stack = createNativeStackNavigator();
 
-export {default} from './storybook'; 
+// export {default} from './storybook'; 
 
 
 
-// export default function App() {
-//   return (
-//     <NavigationContainer style={styles.container}>
-//       <Stack.Navigator>
-//         <Stack.Screen name="Dashboard" component={Dashboard} />
-//       </Stack.Navigator>
-//       {/* <MeunItem/>
-//       <QtyItem/>
-//       <OpenText/>
-//       <NewOrder/> */}
-//     </NavigationContainer>
-//   );
-// }
+export default function App() {
+  return (
+    <NavigationContainer style={styles.container}>
+      <Stack.Navigator>
+        <Stack.Screen name="Dashboard" component={Dashboard} />
+        <Stack.Screen name="Menu Board" component={MenuBoard} />
+      </Stack.Navigator>
+      {/* <MeunItem/>
+      <QtyItem/>
+      <OpenText/>
+      <NewOrder/> */}
+    </NavigationContainer>
+  );
+}
 
 const styles = StyleSheet.create({
   container: {
