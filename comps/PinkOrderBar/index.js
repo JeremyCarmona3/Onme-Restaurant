@@ -61,7 +61,7 @@ import styled from 'styled-components/native';
 // }
 
 const Cont = styled.TouchableOpacity`
-    width: 100%;
+    width: 1000px;
     height: 86px;
     background-color: #FE4370;
     border-radius: 10px;
@@ -69,6 +69,7 @@ const Cont = styled.TouchableOpacity`
 
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     
 `;
 
@@ -87,20 +88,14 @@ const OrderDateCont = styled.View`
 `;
 
 const TapToViewCont= styled.View`
-flex-direction: row;
-    justify-content: flex-end;
-`;
-
-const TapToViewCont2= styled.View`
     flex-direction: row;
 `;
-
-
 
 const TapText =styled.Text`
     color: white;
     font-size: 25px;
-    
+    justify-content: center;
+    margin-top: 8px;
 `;
 
 const PinkOrderBar = ({
@@ -114,11 +109,10 @@ const PinkOrderBar = ({
             <Date>{date}</Date>
             </OrderDateCont>
 
-            <TapToViewCont2>
             <TapToViewCont>
                <TapText>tap to view</TapText>
             </TapToViewCont>
-            </TapToViewCont2>
+           
         </Cont>
     );
 }
