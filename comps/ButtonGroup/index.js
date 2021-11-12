@@ -8,6 +8,8 @@ const Cont = styled.View`
     background-color: red;
     flex-direction: row;
     border-radius: 10px;
+    
+    border: 1px black;
 `;
 
 const StatusSelection = styled.TouchableOpacity`
@@ -38,7 +40,7 @@ const ButtonGroup = ({
             </StatusSelection>
 
             <StatusSelection changeButtonColor={buttonGroupOnPress}>
-                <SelectionText buttonText={"Out of Stock"}></SelectionText>
+                <SelectionText>{buttonText}</SelectionText>
             </StatusSelection>
             
             <StatusSelection changeButtonColor={buttonGroupOnPress}>
