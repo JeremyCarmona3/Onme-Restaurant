@@ -8,23 +8,23 @@ const Cont = styled.View`
 
 const Title = styled.Text`
     color: #666666;
-    fontSize: 18px;
-    marginLeft: 15px;
+    font-Size: 18px;
+    margin-Left: 15px;
 `
 
 const InputTextBox = styled.View`
     width: 417px;
     height: 57px;
     background: #FFFFFF;
-    borderRadius: 10px;
+    border-Radius: 10px;
     border: black;
-    borderStyle: solid;
+    border-Style: solid;
     justify-content: center;
 `
 
 const Input = styled.TextInput`
-    marginLeft: 15px;
-    fontSize: 18px;
+    margin-Left: 15px;
+    font-Size: 18px;
     
 `
 

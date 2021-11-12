@@ -34,7 +34,6 @@ export default function App() {
           <Icons iconimage={require('./assets/popularitemicon.png')} iconheight="39px" iconwidth="39px" />
         </View>
         <View style={styles.card_con}>
-          <AddItemCard />
           <MenuCard itemname="Martini a la Ravioli" image={require('./assets/martini.png')} />
           <MenuCard />
         </View>

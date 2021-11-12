@@ -6,32 +6,32 @@ const Cont = styled.View`
     width: 321px;
     height: 188px;
     background-color: white;
-    borderTopLeftRadius: 20px;
-    borderTopRightRadius: 20px;
+    border-Top-Left-Radius: 20px;
+    border-Top-Right-Radius: 20px;
 `;
 
 const Topbar = styled.View`
     width: 321px;
     height: 41px;
-    backgroundColor: #878787;
-    borderTopLeftRadius: 20px;
-    borderTopRightRadius: 20px;
-    justifyContent: center;
+    background-Color: #878787;
+    border-Top-Left-Radius: 20px;
+    border-Top-Right-Radius: 20px;
+    justify-Content: center;
 `
 
 
 const Title = styled.Text`
     color: white;
     font-family: Poppins;
-    fontSize: 16px;
-    marginLeft: 10px;
+    font-Size: 16px;
+    margin-Left: 10px;
 `;
 
 const Textbox = styled.Text`
     font-family: Poppins;
-    fontSize: 16px;
-    marginLeft: 10px;
-    marginTop: 10px;
+    font-Size: 16px;
+    margin-Left: 10px;
+    margin-Top: 10px;
 `
 
 const NoteSection = ({

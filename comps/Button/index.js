@@ -1,30 +1,36 @@
 import React from 'react';
+import { Button, Image } from 'react-native';
 import styled from 'styled-components/native';
 
 const Cont = styled.TouchableOpacity`
-    width:211px;
-    height:42px;
-    background-color: #737373;
+    width:255px;
+    height:69px;
+    background-color: ${props=>props.buttoncolor};
     border-radius: 50px;
     align-items:center;
     justify-content: center;
+    margin-right: ${props=>props.btn_mar}px;
 `;
 
 const ButtonText = styled.Text`
- color: white;
- font-size:18px;
-
+    color: ${props=>props.textcolor};
+    font-size: 24px;
+    font-weight: ${props=>props.textweight};
 `;
 
 const Buttons = ({
     buttonwidth = 211,
     buttonheight=  42,
     buttontext ="Edit Menu",
-    buttoncolor = "#737373"
+    buttoncolor = "#737373",
+    btn_mar = 20,
+    textcolor = "white",
+    textweight = "500",
+    src= require('../../assets/popularitemicon.png'),
 }) => {
     return (
-        <Cont background-color={buttoncolor} width={buttonwidth} height={buttonheight}>
-            <ButtonText>{buttontext}</ButtonText>
+        <Cont buttoncolor={buttoncolor} buttonwidth={buttonwidth} buttonheight={buttonheight} btn_mar={btn_mar}>
+            <ButtonText textcolor={textcolor} textweight={textweight}>{buttontext}</ButtonText>
         </Cont>
     );
 
