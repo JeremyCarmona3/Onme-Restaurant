@@ -29,7 +29,7 @@ export default function App() {
           <AddItemCard />
           <MenuCard itemname="Martini a la Ravioli"/>
         </View>
-      </View>
+      </View> 
       
     </View>
   );
