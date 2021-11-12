@@ -18,8 +18,8 @@ export default function App() {
           <Text style={styles.Title}>Menu</Text>
         </View>
         <View style={styles.edit_menu}>
-          <View  style={styles.edit_btns}>
-            <Buttons margin="20" buttoncolor="#FE4370" buttontext="SAVE" />
+          <View style={styles.edit_btns}>
+            <Buttons buttoncolor="#FE4370" buttontext="SAVE" />
             <Buttons buttoncolor="#FE4370" buttontext="DISCARD CHANGES" />
           </View>
           <Icons />
@@ -72,23 +72,23 @@ const styles = StyleSheet.create({
     width: '90%',
     border: '1px solid #DADADA',
     margin: '4%',
-    marginTop: '4%',
+    marginTop: '3%',
   },
 
   add_items:{
     marginBottom: '3%',
-    marginLeft: '3%',
+    marginLeft: '4%',
   },
 
   Title:{
     fontWeight: 600,
     fontSize: '48px',
-    marginLeft: '3%',
+    marginLeft: '4%',
   },
 
   Sub_edit:{
     flexDirection:'row',
-    marginLeft: '3%',
+    marginLeft: '4%',
     alignItems: 'center',
   },
 
