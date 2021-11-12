@@ -27,6 +27,7 @@ export default function App() {
       <Stack.Navigator>
       
         <Stack.Screen name="Dashboard" component={Dashboard} />
+
        
         
       </Stack.Navigator>

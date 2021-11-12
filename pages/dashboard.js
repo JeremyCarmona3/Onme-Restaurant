@@ -10,6 +10,8 @@ import OrderStatsCard from '../comps/OrderStatsCard';
 import NewOrderLine from '../comps/NewOrderLine';
 import PinkOrderBar from '../comps/PinkOrderBar';
 
+import AddItemToMenu from '../comps/AddItemToMenu';
+
 const DashCont = styled.View`
 flex-direction: row;
 `;
@@ -41,6 +43,9 @@ export default function Dashboard({navigation}) {
         <StatusBar style="auto" />
             {/* <NewOrder></NewOrder> */}
             <DashCont>
+
+            <AddItemToMenu/>
+
               <NavBar/>
 
               

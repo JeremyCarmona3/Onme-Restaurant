@@ -2,39 +2,40 @@ import React from 'react';
 import styled from 'styled-components/native';
 import { StyleSheet, Text, View, TextInput } from 'react-native';
 
-const Cont = styled.View`
-    
+const Cont = styled.View` 
 `;
 
 const Title = styled.Text`
-    color: #666666;
-    fontSize: 18px;
-    marginLeft: 15px;
-`
+    color: black;
+    font-size: 18px;
+    margin-left: 15px;
+`;
 
 const InputTextBox = styled.View`
-    width: 417px;
-    height: 57px;
+    width: ${props => props.inputWidth};
+    height:${props => props.inputHeight};
     background: #FFFFFF;
-    borderRadius: 10px;
-    border: black;
-    borderStyle: solid;
+    border-radius: 10px;
+    border: grey;
+    border-style: solid;
     justify-content: center;
-`
+`;
 
 const Input = styled.TextInput`
-    marginLeft: 15px;
-    fontSize: 18px;
+    margin-left: 15px;
+    font-size: 18px;
     
-`
+`;
 
 const MeunItem = ({
     title = "Name",
+    width = '417px',
+    height = '57px',
 }) => {
     return (
     <Cont>
         <Title>{title}</Title>
-        <InputTextBox>
+        <InputTextBox inputWidth={width} inputHeight={height}>
             <Input></Input>
         </InputTextBox>
     </Cont>
