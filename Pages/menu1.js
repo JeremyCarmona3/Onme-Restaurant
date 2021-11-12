@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import NavBar from './comps/navbar_Min';
+import NavBar from './comps/Navbar';
 import Buttons from './comps/Button';
 import MenuCard from './comps/Card';
 import Icons from './comps/MenuIcon';
