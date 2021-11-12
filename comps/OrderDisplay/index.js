@@ -6,40 +6,40 @@ const Cont = styled.View`
     width: 832px;
     height: 86px;
     background: #FE4370;
-    borderRadius: 10px;
-    alignItems: center;
+    border-Radius: 10px;
+    align-Items: center;
     flex-direction: row;
 `;
 
 const Left = styled.View`
     flex:1;
-    alignItems: flex-start;
+    align-Items: flex-start;
 `
 
 const Order = styled.Text`
-    marginLeft: 15px;
-    fontSize: 24px;
+    margin-Left: 15px;
+    font-Size: 24px;
     color: white;
-    fontFamily: Poppins;
+    font-Family: Poppins;
 `
 
 const Time = styled.Text`
-    marginLeft: 15px;
+    margin-Left: 15px;
     color: white;
-    fontFamily: Poppins;
-    fontSize: 11px;
+    font-Family: Poppins;
+    font-Size: 11px;
 `
 
 const Right = styled.View`
     flex: 1;
-    alignItems: flex-end;
+    align-Items: flex-end;
 `
 
 const Button = styled.Text`
-    marginRight: 15px;
+    margin-Right: 15px;
     color: white;
-    fontFamily: Poppins;
-    fontSize: 24px;
+    font-Family: Poppins;
+    font-Size: 24px;
 `
 
 const OrderDisplay = ({
