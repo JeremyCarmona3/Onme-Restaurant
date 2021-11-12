@@ -4,7 +4,7 @@ import styled from 'styled-components/native';
 const NavCont = styled.View`
     display: flex;
     height: 100%;
-    width: 10%;
+    width: 115px;
     background-color: #737373;
     
 
