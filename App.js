@@ -21,22 +21,22 @@ export {default} from './storybook';
 
 
 
-export default function App() {
-  return (
-    <NavigationContainer style={styles.container}>
-      <Stack.Navigator>
+// export default function App() {
+//   return (
+//     <NavigationContainer style={styles.container}>
+//       <Stack.Navigator>
       
-        <Stack.Screen name="Dashboard" component={Dashboard} />
+//         <Stack.Screen name="Dashboard" component={Dashboard} />
        
         
-      </Stack.Navigator>
-      {/* <MeunItem/>
-      <QtyItem/>
-      <OpenText/>
-      <NewOrder/> */}
-    </NavigationContainer>
-  );
-}
+//       </Stack.Navigator>
+//       {/* <MeunItem/>
+//       <QtyItem/>
+//       <OpenText/>
+//       <NewOrder/> */}
+//     </NavigationContainer>
+//   );
+// }
 
 const styles = StyleSheet.create({
   container: {
