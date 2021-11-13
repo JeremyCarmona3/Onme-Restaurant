@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button, Image } from 'react-native';
 import styled from 'styled-components/native';
 
 const Cont = styled.TouchableOpacity`
@@ -8,6 +9,7 @@ const Cont = styled.TouchableOpacity`
     border-radius: 50px;
     align-items:center;
     justify-content: center;
+    margin-right: ${props=>props.btn_mar}px;
 `;
 
 const ButtonText = styled.Text`

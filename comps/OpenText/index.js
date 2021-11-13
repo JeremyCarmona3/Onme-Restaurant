@@ -3,31 +3,6 @@ import styled from 'styled-components/native';
 import { StyleSheet, Text, View } from 'react-native';
 // import { useFonts } from 'expo-font';
 
-// const Cont = styled.View`
-//    display :flex ;
-// `;
-
-
-// const OpenText = ({
-//    openText = "Open",
-//    openTextSize = "30px",
-//    openTextWeight = "bold",
-//    openTextColor = "black"
-// }) => {
-//     return (
-
-//         <Cont>
-//         <OpenText 
-//         //   openTextSize={openTextSize}
-//         //   openTextWeight={openTextWeight}
-//         //   openTextColor={openTextColor}
-//         >
-//            {openText}
-//         </OpenText>
-//         </Cont>
-//     );
-// }
-
 const Cont = styled.View``;
 
 const Opentxt = styled.Text`

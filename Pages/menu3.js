@@ -1,53 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-<<<<<<< HEAD
-// import NoteSection from './comps/NoteSection';
-// import OrderDisplay from './comps/PinkOrderBar';
-// import QtyItem from './comps/QtyItem';
-// import MenuItem from './comps/MenuItem';
-// import OpenText from './comps/OpenText';
-// import NewOrder from './comps/NewOrder';
-
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
-import Dashboard from './pages/dashboard';
-=======
-import NavBar from './comps/NavBar';
+import NavBar from './comps/Navbar';
 import Buttons from './comps/Button';
 import MenuCard from './comps/Card';
 import AddItemCard from './comps/AddItemCard';
 import Icons from './comps/MenuIcon';
->>>>>>> ba743c7f5e09dd56adc1f50a1ca718137baf7f15
 
+// export {default} from './storybook'; 
 
-<<<<<<< HEAD
-//note(alicia):import ___ from..___ then <stackscreem name... comment out other pages to see one page at a time (until the routes are done)
-const Stack = createNativeStackNavigator();
-
-//export {default} from './storybook'; 
-
-
-
- export default function App() {
-   return (
-     <NavigationContainer style={styles.container}>
-       <Stack.Navigator>
-      
-        <Stack.Screen name="Dashboard" component={Dashboard} />
-
-       
-        
-       </Stack.Navigator>
-       {/* <MeunItem/>
-       <QtyItem/>
-       <OpenText/>
-       <NewOrder/> */}
-     </NavigationContainer>
-   );
- }
-=======
 export default function App() {
   return (
     <View style={styles.container}>
@@ -57,8 +18,8 @@ export default function App() {
           <Text style={styles.Title}>Menu</Text>
         </View>
         <View style={styles.edit_menu}>
-          <View style={styles.edit_btns}>
-            <Buttons buttoncolor="#FE4370" buttontext="SAVE" />
+          <View  style={styles.edit_btns}>
+            <Buttons margin="20" buttoncolor="#FE4370" buttontext="SAVE" />
             <Buttons buttoncolor="#FE4370" buttontext="DISCARD CHANGES" />
           </View>
           <Icons />
@@ -73,7 +34,6 @@ export default function App() {
           <Icons iconimage={require('./assets/popularitemicon.png')} iconheight="39px" iconwidth="39px" />
         </View>
         <View style={styles.card_con}>
-          <AddItemCard />
           <MenuCard itemname="Martini a la Ravioli" image={require('./assets/martini.png')} />
           <MenuCard />
         </View>
@@ -82,7 +42,6 @@ export default function App() {
     </View>
   );
 }
->>>>>>> ba743c7f5e09dd56adc1f50a1ca718137baf7f15
 
 const styles = StyleSheet.create({
   container: {
@@ -112,23 +71,23 @@ const styles = StyleSheet.create({
     width: '90%',
     border: '1px solid #DADADA',
     margin: '4%',
-    marginTop: '3%',
+    marginTop: '4%',
   },
 
   add_items:{
     marginBottom: '3%',
-    marginLeft: '4%',
+    marginLeft: '3%',
   },
 
   Title:{
     fontWeight: 600,
     fontSize: '48px',
-    marginLeft: '4%',
+    marginLeft: '3%',
   },
 
   Sub_edit:{
     flexDirection:'row',
-    marginLeft: '4%',
+    marginLeft: '3%',
     alignItems: 'center',
   },
 

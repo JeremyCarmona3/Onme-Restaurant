@@ -14,7 +14,6 @@ const Cont = styled.TouchableOpacity`
     justify-content: center;
     padding: 5%;
     flex-direction: column;
-
     box-shadow: 10px 5px 5px grey;
     
 `;

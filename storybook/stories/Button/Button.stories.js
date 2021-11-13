@@ -17,6 +17,7 @@ import MenuItemInput from '../../../comps/MenuItemInput';
 import QtyItem from '../../../comps/QtyItem';
 import OpenText from '../../../comps/OpenText';
 import NewOrderLine from '../../../comps/NewOrderLine';
+import NavBar from '../../../comps/navbar_Min';
 
 storiesOf('Comps', module)
   .addDecorator((getStory) => <CenterView>{getStory()}</CenterView>)
@@ -56,6 +57,10 @@ storiesOf('Comps', module)
 
 .add('NewOrder', () => (
   <NewOrderLine />
+))
+
+.add('Navigation', () => (
+  <NavBar/>
 ));
 
 

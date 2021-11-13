@@ -7,7 +7,8 @@ const Cont = styled.View`
     height: 56px;
     background: #FFFFFF;
     border-radius: 20px;
-    box-shadow: 0px 3px 3px rgba(95, 95, 95, 0.5);    align-items: center;
+    box-shadow: 0px 3px 3px rgba(95, 95, 95, 0.5);    
+    align-items: center;
     flex-direction: row;
 `;
 

@@ -47,8 +47,8 @@ const MenuItem6 = styled.View`
 `;
 
 const NavIcon = styled.ImageBackground`
-    height: 45px;
-    width: 45px;
+    height: 50px;
+    width: 50px;
     
 `;
 
