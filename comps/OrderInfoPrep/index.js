@@ -7,7 +7,6 @@ const Prepcont = styled.View`
     flex-direction: column;
     width: 211px;
     height: 81px;
-    background-color: red;
     justify-content: center;
     align-items: center;
     padding: 5px;
