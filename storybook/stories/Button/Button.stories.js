@@ -7,12 +7,13 @@ import Button from '.';
 import CenterView from '../CenterView';
 
 import MenuCard from '../../../comps/Card';
+import ButtonGroup from '../../../comps/ButtonGroup';
 import Buttons from '../../../comps/Button';
 import AddItemCard from '../../../comps/AddItemCard';
 import OrderNumberCard from '../../../comps/OrderNumberCard';
 import OrderCosts from '../../../comps/OrderCosts';
 import OrderStatsCard from '../../../comps/OrderStatsCard';
-import MeunItem from '../../../comps/MenuItem';
+import MenuItemInput from '../../../comps/MenuItemInput';
 import QtyItem from '../../../comps/QtyItem';
 import OpenText from '../../../comps/OpenText';
 import NewOrder from '../../../comps/NewOrder';
@@ -52,6 +53,7 @@ storiesOf('Comps', module)
 .add('OpenText', () => (
   <OpenText />
 ))
+
 .add('NewOrder', () => (
   <NewOrder />
 ));

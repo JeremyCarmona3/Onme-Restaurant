@@ -11,8 +11,7 @@ const Cont = styled.View`
     background-color: lightgrey;
     border-radius: 20px;
     padding: 4%;
-
- 
+    flex-direction: column;
 `;
 
 const AddItemText = styled.Text`
@@ -23,16 +22,28 @@ const AddItemText = styled.Text`
 
 const TopRow = styled.View`
     flex-direction: row;
+    margin-bottom:3%;
+    justify-content: space-between;
 `;
 
 const MidRow = styled.View`
+    margin-bottom:3%;
+    flex-direction: column;
+    margin-bottom:3%;
+`;
+
+const BotRow = styled.View`
+    margin-bottom:3%;
+    flex-direction: column;
+    margin-bottom:3%;
 `;
 
 const AddButton = styled.View`
 `;
 
 const Cont2 = styled.View`
-    justify-content: space-between;
+    max-width: 900px;
+    max-height: 750px;
 `;
 
 const AddItemToMenu = ({
@@ -43,6 +54,7 @@ const AddItemToMenu = ({
             <AddItemText>Add Item to Menu</AddItemText>
 
             <Cont2>
+
             <TopRow>
             <MenuItemInput/>
             <MenuItemInput title='Price' width='150px'/>
@@ -50,8 +62,12 @@ const AddItemToMenu = ({
 
             <MidRow>
             <MenuItemInput title='Description' width='808px' height='74px'/>
-            <MenuItemInput title='Category Selection' width='808px'/>
             </MidRow>
+
+            <BotRow>
+            <MenuItemInput title='Category Selection' width='808px'/>
+            </BotRow>
+
             </Cont2>
 
             <AddButton>
