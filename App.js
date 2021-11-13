@@ -21,15 +21,27 @@ import SeatMap from './comps/SeatMap/index';
 //header text
 const Title = styled.Text`
   font-size: 40px;
+  font-weight: bold;
+  width: 470px;
+  padding: 10px;
 
 `;
 
 const LeftColumn = styled.View`
   flex: 1;
+  padding: 20px;
+`;
+
+const ButtonCont = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
 `;
 
 const RightColumn = styled.View`
   flex: 2;
+  justify-content: flex-end;
+  padding: 50px;
+
 `;
 
 
@@ -42,7 +54,10 @@ export default function App({
 
       <LeftColumn>
         <Title>Seat Configuration</Title>
-        <Button></Button>
+        <ButtonCont>
+          <Button></Button>
+          <Button></Button>
+        </ButtonCont>
       </LeftColumn>
 
       <RightColumn>

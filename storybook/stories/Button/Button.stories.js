@@ -47,13 +47,10 @@ storiesOf('Comps', module)
   <OrderCosts/>
 ))
 
-<<<<<<< HEAD
 .add('ButtonGroup', () => (
   <ButtonGroup/>
 ))
 
-=======
->>>>>>> ea73c5a429f0db78484863256ad43bc17e901e92
 .add('Buttons', () => (
   <Buttons/>
 ))
@@ -68,7 +65,6 @@ storiesOf('Comps', module)
 ))
 
 .add('NewOrder', () => (
-<<<<<<< HEAD
   <NewOrder />
 ))
 
@@ -87,9 +83,6 @@ storiesOf('Comps', module)
 .add('Navigation', () => (
   <NavBar/>
 
-=======
-  <NewOrderLine />
->>>>>>> ea73c5a429f0db78484863256ad43bc17e901e92
 ));
 
 
