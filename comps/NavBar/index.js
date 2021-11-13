@@ -59,38 +59,42 @@ const NavBar = ({
     image4 = require('../../assets/nav4_menu.png'),
     image5 = require('../../assets/nav5_setting.png'),
     image6 = require('../../assets/nav_logo.png'),
+    menuPgOneOnPress = ()=>{},
+    menuPgTwoOnPress = ()=>{}, 
+    menuPgThreeOnPress = ()=>{}, 
+    menuPgFourOnPress = ()=>{}, 
+
+    orderPgOneOnPress = ()=>{},  
+    orderPgTwoPress = ()=>{},  
+    orderPgThreeOneOnPress = ()=>{},  
+    orderPgFourOnPress = ()=>{},  
+    orderPgFiveOnPress = ()=>{},  
 
 }) => {
     return (
         <NavCont>
-           <MenuItem1>
-            <NavIcon source={image1} resizeMode="cover" borderRadius="25px">
-            </NavIcon>
+           <MenuItem1 onPress={menuPgOneOnPress} >
+            <NavIcon source={image1} resizeMode="cover" borderRadius="25px" />
            </MenuItem1>
 
-           <MenuItem2>
-           <NavIcon source={image2} resizeMode="cover" borderRadius="25px">
-            </NavIcon>
+           <MenuItem2 onPress={menuPgTwoOnPress}>
+           <NavIcon source={image2} resizeMode="cover" borderRadius="25px" />
            </MenuItem2>
 
-           <MenuItem3>
-           <NavIcon source={image3} resizeMode="cover" borderRadius="25px">
-        </NavIcon>
+           <MenuItem3 onPress={menuPgThreeOnPress}>
+           <NavIcon source={image3} resizeMode="cover" borderRadius="25px" />
            </MenuItem3>
 
-           <MenuItem4>
-           <NavIcon source={image4} resizeMode="cover" borderRadius="25px">
-        </NavIcon>
+           <MenuItem4 onPress={menuPgFourOnPress}>
+           <NavIcon source={image4} resizeMode="cover" borderRadius="25px" />
            </MenuItem4>
 
            <MenuItem5>
-           <NavIcon source={image5} resizeMode="cover" borderRadius="25px">
-        </NavIcon>
+           <NavIcon source={image5} resizeMode="cover" borderRadius="25px" />
            </MenuItem5>
 
            <MenuItem6>
-           <NavIcon source={image6} resizeMode="cover" borderRadius="25px">
-        </NavIcon>
+           <NavIcon source={image6} resizeMode="cover" borderRadius="25px" />
            </MenuItem6>
         </NavCont>
     )
