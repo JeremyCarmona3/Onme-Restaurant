@@ -40,9 +40,7 @@ const RightColumn = styled.View`
 `;
 
 
-export default function App({
-
-}) {
+export default function App({navigation}) {
   return (
     <View style={styles.container}>
       <NavBar
@@ -52,7 +50,7 @@ export default function App({
         menuconfigOnPress={() => navigation.navigate('Menu1')}
       />
 
-      <LeftColumn>
+      {/* <LeftColumn>
         <Title>Seat Configuration</Title>
         <ButtonCont>
           <Button buttontext='Save' buttoncolor='#FE4370'></Button>
@@ -62,7 +60,7 @@ export default function App({
 
       <RightColumn>
         <SeatMap></SeatMap>
-      </RightColumn>
+      </RightColumn> */}
     </View>
   );
 }
