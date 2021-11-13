@@ -27,17 +27,8 @@ export default function App() {
      <NavigationContainer style={styles.container}>
       <Stack.Navigator>
       
-<<<<<<< HEAD
         // {/* <Stack.Screen name="Dashboard" component={Dashboard} /> */}
         // <Stack.Screen name="Orderpage" component={Orderpage} />
-=======
-
-//       <Stack.Screen name="Dashboard" component={Dashboard} />
-
-
-        <Stack.Screen name="Orderpage" component={Orderpage} />
-
->>>>>>> 131ddd6d6e6d7ce09f5b1bce6349995deea0a2d0
        
         
       </Stack.Navigator>
