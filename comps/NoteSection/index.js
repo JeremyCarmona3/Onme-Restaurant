@@ -6,6 +6,7 @@ const Cont = styled.View`
     width: 409px;
     height: 291px;
     
+
 `;
 
 const Topbar = styled.View`
@@ -16,6 +17,7 @@ const Topbar = styled.View`
     border-top-right-radius: 15px;
     justify-content: center;
     padding-left: 5%;
+
 `
 
 const Bottombar = styled.View`
@@ -24,6 +26,7 @@ const Bottombar = styled.View`
     background-color: #EEEEEE;
     padding-left: 5%;
     padding-top: 5%;
+
 `
 
 const Noteheader = styled.Text`

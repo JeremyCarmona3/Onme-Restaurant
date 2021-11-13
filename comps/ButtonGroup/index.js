@@ -5,12 +5,20 @@ import styled from 'styled-components/native';
 const Cont = styled.View`
     width:710px;
     height:55px;
+<<<<<<< HEAD
     
     flex-direction: row;
     border-radius: 10px;
     
     border: 1px lightgrey;
     
+=======
+    background-color: white;
+    flex-direction: row;
+    border-radius: 10px;
+    
+    border: 1px #C4C4C4;
+>>>>>>> 11707b8b425b9c042a11bc90c3fa82cb37a88e53
 `;
 
 const StatusSelection = styled.TouchableOpacity`
@@ -24,10 +32,12 @@ const StatusSelection = styled.TouchableOpacity`
 
 const SelectionText = styled.Text`
     font-size: 18px; 
-    
-   
+    margin-top: 5%;
+    font-size: 18px; 
+    font-weight: medium;
+    align-items: center;
+    justify-content: center;
 `;
-
 
 const ButtonGroup = ({
     buttonGroupOnPress1 = "#C4C4C4",
@@ -54,5 +64,6 @@ const ButtonGroup = ({
     );
 
 }
+
 
 export default ButtonGroup;

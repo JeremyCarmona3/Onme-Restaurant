@@ -18,6 +18,11 @@ import QtyItem from '../../../comps/QtyItem';
 import OpenText from '../../../comps/OpenText';
 import NewOrderLine from '../../../comps/NewOrderLine';
 import NavBar from '../../../comps/navbar_Min';
+// import NewOrder from '../../../comps/NewOrder';
+// import NavBar from '../../../comps/navbar_Min';
+import Toggle from '../../../comps/Toggle';
+import ListItem from '../../../comps/ListItem';
+
 
 storiesOf('Comps', module)
   .addDecorator((getStory) => <CenterView>{getStory()}</CenterView>)
@@ -57,6 +62,10 @@ storiesOf('Comps', module)
 
 .add('NewOrder', () => (
   <NewOrderLine />
+))
+
+.add('ListItem', () => (
+  <ListItem />
 ))
 
 .add('Navigation', () => (

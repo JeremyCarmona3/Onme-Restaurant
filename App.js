@@ -13,6 +13,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Dashboard from './pages/dashboard';
+<<<<<<< HEAD
 =======
 import NavBar from './comps/NavBar';
 import Buttons from './comps/Button';
@@ -20,12 +21,16 @@ import MenuCard from './comps/Card';
 import AddItemCard from './comps/AddItemCard';
 import Icons from './comps/MenuIcon';
 >>>>>>> ba743c7f5e09dd56adc1f50a1ca718137baf7f15
+=======
+import Orderpage from './pages/orderspage';
+>>>>>>> 11707b8b425b9c042a11bc90c3fa82cb37a88e53
 
 
 <<<<<<< HEAD
 //note(alicia):import ___ from..___ then <stackscreem name... comment out other pages to see one page at a time (until the routes are done)
-const Stack = createNativeStackNavigator();
+// const Stack = createNativeStackNavigator();
 
+<<<<<<< HEAD
 //export {default} from './storybook'; 
 
 
@@ -83,6 +88,19 @@ export default function App() {
   );
 }
 >>>>>>> ba743c7f5e09dd56adc1f50a1ca718137baf7f15
+=======
+// export {default} from './storybook'; 
+
+
+
+export default function App() {
+  return (
+    <View>
+      
+    </View>
+  );
+}
+>>>>>>> 11707b8b425b9c042a11bc90c3fa82cb37a88e53
 
 const styles = StyleSheet.create({
   container: {
