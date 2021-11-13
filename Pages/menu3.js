@@ -1,15 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import NavBar from './comps/Navbar';
-import Buttons from './comps/Button';
-import MenuCard from './comps/Card';
-import AddItemCard from './comps/AddItemCard';
-import Icons from './comps/MenuIcon';
+import NavBar from '../comps/NavBar';
+import Buttons from '../comps/Button';
+import MenuCard from '../comps/Card';
+import AddItemCard from '../comps/AddItemCard';
+import Icons from '../comps/MenuIcon';
 
 // export {default} from './storybook'; 
 
 export default function App() {
+  
   return (
     <View style={styles.container}>
       <NavBar />
@@ -29,9 +30,9 @@ export default function App() {
           <Buttons textcolor="black" buttoncolor="#B5B5B5" buttontext="ADD CATEGORY" />
         </View>
         <View  style={styles.Sub_edit}>
-          <Icons iconimage={require('./assets/removeitemicon.png')} iconheight="36px" iconwidth="36px" />
+          <Icons iconimage={require('../assets/removeitemicon.png')}  />
           <Text style={styles.Subtitle}>Popular Items</Text>
-          <Icons iconimage={require('./assets/popularitemicon.png')} iconheight="39px" iconwidth="39px" />
+          <Icons iconimage={require('../assets/popularitemicon.png')}  />
         </View>
         <View style={styles.card_con}>
           <MenuCard itemname="Martini a la Ravioli" image={require('./assets/martini.png')} />

@@ -5,12 +5,12 @@ import styled from 'styled-components/native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import Dashboard from './pages/dashboard';
-import Orderpage from './pages/orderspage';
+// import Dashboard from './pages/dashboard';
+// import Orderpage from './pages/orderspage';
 
-import NavBar from './comps/NavBar/index';
-import Button from  './comps/Button/index';
-import SeatMap from './comps/SeatMap/index';
+import NavBar from '../comps/NavBar/index';
+import Button from  '../comps/Button/index';
+import SeatMap from '../comps/SeatMap/index';
 
 
 //header text
@@ -45,7 +45,12 @@ export default function App({
 }) {
   return (
     <View style={styles.container}>
-      <NavBar></NavBar>
+      <NavBar
+        homeOnPress={() => navigation.navigate('Dashboard')}
+        ordersOnPress={() => navigation.navigate('OrdersPage3')}
+        seatconfigOnPress={() => navigation.navigate('SeatConfig')}
+        menuconfigOnPress={() => navigation.navigate('Menu1')}
+      />
 
       <LeftColumn>
         <Title>Seat Configuration</Title>

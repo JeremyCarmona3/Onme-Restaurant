@@ -9,37 +9,37 @@ const NavCont = styled.View`
     
 `;
 
-const MenuItem1 = styled.TouchableOpacity`
+const HomeIcon = styled.TouchableOpacity`
     height: 16.6666%;
     justify-content: center;
     align-items: center;
     `;
 
-const MenuItem2 = styled.TouchableOpacity`
+const OrdersIcon = styled.TouchableOpacity`
     height: 16.6666%;
     justify-content: center;
     align-items: center;
     `;
 
-const MenuItem3 = styled.TouchableOpacity`
+const SeatConfigIcon = styled.TouchableOpacity`
     height: 16.6666%;
     justify-content: center;
     align-items: center;
     `;
 
-const MenuItem4 = styled.TouchableOpacity`
+const MenuConfigIcon = styled.TouchableOpacity`
     height: 16.6666%;
     justify-content: center;
     align-items: center;
 `;
 
-const MenuItem5 = styled.TouchableOpacity`
+const SettingsIcon = styled.TouchableOpacity`
     height: 16.6666%;
     justify-content: center;
     align-items: center;
     `;
 
-const MenuItem6 = styled.View`
+const Logo = styled.View`
     height: 16.6666%;
     justify-content: center;
     align-items: center;
@@ -59,10 +59,11 @@ const NavBar = ({
     image4 = require('../../assets/nav4_menu.png'),
     image5 = require('../../assets/nav5_setting.png'),
     image6 = require('../../assets/nav_logo.png'),
-    menuPgOneOnPress = ()=>{},
-    menuPgTwoOnPress = ()=>{}, 
-    menuPgThreeOnPress = ()=>{}, 
-    menuPgFourOnPress = ()=>{}, 
+    homeOnPress = ()=>{},
+    ordersOnPress = ()=>{}, 
+    seatconfigOnPress = ()=>{}, 
+    menuconfigOnPress = ()=>{}, 
+    settingsOnPress = ()=>{}, 
 
     orderPgOneOnPress = ()=>{},  
     orderPgTwoPress = ()=>{},  
@@ -73,29 +74,29 @@ const NavBar = ({
 }) => {
     return (
         <NavCont>
-           <MenuItem1 onPress={menuPgOneOnPress} >
+           <HomeIcon onPress={menuPgOneOnPress} >
             <NavIcon source={image1} resizeMode="cover" borderRadius="25px" />
-           </MenuItem1>
+           </HomeIcon>
 
-           <MenuItem2 onPress={menuPgTwoOnPress}>
+           <OrdersIcon onPress={menuPgTwoOnPress}>
            <NavIcon source={image2} resizeMode="cover" borderRadius="25px" />
-           </MenuItem2>
+           </OrdersIcon>
 
-           <MenuItem3 onPress={menuPgThreeOnPress}>
+           <SeatConfigIcon onPress={menuPgThreeOnPress}>
            <NavIcon source={image3} resizeMode="cover" borderRadius="25px" />
-           </MenuItem3>
+           </SeatConfigIcon>
 
-           <MenuItem4 onPress={menuPgFourOnPress}>
+           <MenuConfigIcon onPress={menuPgFourOnPress}>
            <NavIcon source={image4} resizeMode="cover" borderRadius="25px" />
-           </MenuItem4>
+           </MenuConfigIcon>
 
-           <MenuItem5>
+           <SettingsIcon>
            <NavIcon source={image5} resizeMode="cover" borderRadius="25px" />
-           </MenuItem5>
+           </SettingsIcon>
 
-           <MenuItem6>
+           <Logo>
            <NavIcon source={image6} resizeMode="cover" borderRadius="25px" />
-           </MenuItem6>
+           </Logo>
         </NavCont>
     )
 };
