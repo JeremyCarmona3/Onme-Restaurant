@@ -21,6 +21,10 @@ import OpenText from '../../../comps/OpenText';
 import Toggle from '../../../comps/Toggle';
 import ListItem from '../../../comps/ListItem';
 
+//user side components
+import SeatComp from '../../../comps/SeatComp';
+import UserSeatMap from '../../../comps/UserSeatMap';
+
 
 import NewOrderLine from '../../../comps/NewOrderLine';
 
@@ -78,6 +82,14 @@ storiesOf('Comps', module)
 
 .add('SeatMap', () => (
   <SeatMap />
+))
+
+.add('SeatComp', () => (
+  <SeatComp />
+))
+
+.add('UserSeatMap', () => (
+  <UserSeatMap />
 ))
 
 .add('Navigation', () => (

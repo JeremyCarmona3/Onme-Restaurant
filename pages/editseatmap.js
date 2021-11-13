@@ -51,7 +51,7 @@ export default function App({
         <Title>Seat Configuration</Title>
         <ButtonCont>
           <Button buttontext='Save' buttoncolor='#FE4370'></Button>
-          <Button></Button>
+          <Button buttontext='Edit Menu' buttoncolor='#FE4370' fontsize='18px'></Button>
         </ButtonCont>
       </LeftColumn>
 

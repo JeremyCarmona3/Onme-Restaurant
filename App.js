@@ -15,57 +15,57 @@ import SeatMap from './comps/SeatMap/index';
 //note(alicia):import ___ from..___ then <stackscreem name... comment out other pages to see one page at a time (until the routes are done)
 // const Stack = createNativeStackNavigator();
 
-//  export {default} from './storybook'; 
+ export {default} from './storybook'; 
 
 
-//header text
-const Title = styled.Text`
-  font-size: 40px;
-  font-weight: bold;
-  width: 470px;
-  padding: 10px;
+// //header text
+// const Title = styled.Text`
+//   font-size: 40px;
+//   font-weight: bold;
+//   width: 470px;
+//   padding: 10px;
 
-`;
+// `;
 
-const LeftColumn = styled.View`
-  flex: 1;
-  padding: 20px;
-`;
+// const LeftColumn = styled.View`
+//   flex: 1;
+//   padding: 20px;
+// `;
 
-const ButtonCont = styled.View`
-  flex-direction: row;
-  justify-content: space-between;
-`;
+// const ButtonCont = styled.View`
+//   flex-direction: row;
+//   justify-content: space-between;
+// `;
 
-const RightColumn = styled.View`
-  flex: 2;
-  justify-content: flex-end;
-  padding: 50px;
+// const RightColumn = styled.View`
+//   flex: 2;
+//   justify-content: flex-end;
+//   padding: 50px;
 
-`;
+// `;
 
 
-export default function App({
+// export default function App({
 
-}) {
-  return (
-    <View style={styles.container}>
-      <NavBar></NavBar>
+// }) {
+//   return (
+//     <View style={styles.container}>
+//       <NavBar></NavBar>
 
-      <LeftColumn>
-        <Title>Seat Configuration</Title>
-        <ButtonCont>
-          <Button buttontext='Save' buttoncolor='#FE4370'></Button>
-          <Button></Button>
-        </ButtonCont>
-      </LeftColumn>
+//       <LeftColumn>
+//         <Title>Seat Configuration</Title>
+//         <ButtonCont>
+//           <Button buttontext='Save' buttoncolor='#FE4370' fontsize='18px'></Button>
+//           <Button buttontext='Edit Menu' buttoncolor='#FE4370' fontsize='18px'></Button>
+//         </ButtonCont>
+//       </LeftColumn>
 
-      <RightColumn>
-        <SeatMap></SeatMap>
-      </RightColumn>
-    </View>
-  );
-}
+//       <RightColumn>
+//         <SeatMap></SeatMap>
+//       </RightColumn>
+//     </View>
+//   );
+// }
 
 const styles = StyleSheet.create({
   container: {

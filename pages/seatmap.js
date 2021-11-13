@@ -44,7 +44,7 @@ export default function App({
 
       <LeftColumn>
         <Title>Seat Configuration</Title>
-        <Button></Button>
+        <Button buttontext='Edit Seating' fontsize='18px'></Button>
       </LeftColumn>
 
       <RightColumn>
