@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components/native';
 
 const Cont = styled.View`
-    width: 225px;
-    height: 108px;
+    width: 351px;
+    height: 192px;
     justify-content: space-between;
     flex-direction: row;
 `;
@@ -11,20 +11,28 @@ const Cont = styled.View`
 const SubTotal = styled.Text`
     color: #5B5B5B;
     font-weight: bold;
+    font-size: 24px;
+    
 `;
 
 const Tax = styled.Text`
     color: #5B5B5B;
     font-weight: bold;
+    font-size: 24px;
+
 `;
 
 const Tip = styled.Text`
     color: #5B5B5B;
     font-weight: bold;
+    font-size: 24px;
+
 `;
 
 const Total = styled.Text`
     font-weight: bold;
+    font-size: 24px;
+    
 `;
 
 const LeftCol = styled.View`
@@ -36,10 +44,14 @@ const RightCol = styled.View`
 const Costs= styled.Text`
     color: #5B5B5B;
     font-weight: bold;
+    font-size: 24px;
+
 `;
 
 const Costs2 = styled.Text`
     font-weight: bold;
+    font-size: 24px;
+
 `;
 
 const OrderCosts = ({

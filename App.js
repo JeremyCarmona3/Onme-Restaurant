@@ -1,37 +1,55 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import NoteSection from './comps/NoteSection';
-import OrderDisplay from './comps/OrderDisplay';
-import QtyItem from './comps/QtyItem';
-import MeunItem from './comps/MenuItem';
-import OpenText from './comps/OpenText';
-import NewOrder from './comps/NewOrder';
+import styled from 'styled-components/native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import Dashboard from './pages/dashboard';
+import EditSeatConfig from './pages/editseatconfig';
+import Menu1 from './pages/menu1';
+import Menu2 from './pages/Menu2';
+import Menu3 from './pages/menu3';
+import Menu4 from './pages/Menu4';
+import OrdersPage3 from './pages/orderspage3';
+import SeatConfig from './pages/seatconfig';
 
 
 
-// export {default} from './storybook'; 
+
+import NavBar from './comps/NavBar/index';
+import Button from  './comps/Button/index';
+import SeatMap from './comps/SeatMap/index';
+
+//note(alicia):import ___ from..___ then <stackscreem name... comment out other pages to see one page at a time (until the routes are done)
+const Stack = createNativeStackNavigator();
+
+//export {default} from './storybook'; 
 
 
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <MeunItem/>
-      <QtyItem/>
-      <OpenText/>
-      <NewOrder/>
-
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+ export default function App() {
+   return (
+     <NavigationContainer style={styles.container}>
+       <Stack.Navigator>
+        <Stack.Screen name="Dashboard" component={Dashboard} />
+        <Stack.Screen name="EditSeatConfig" component={EditSeatConfig}/>
+        <Stack.Screen name="Menu1" component={Menu1}/>
+        <Stack.Screen name="Menu2" component={Menu2}/>
+        <Stack.Screen name="Menu3" component={Menu3}/>
+        <Stack.Screen name="Menu4" component={Menu4}/>
+        <Stack.Screen name="OrdersPage3" component={OrdersPage3}/>
+        <Stack.Screen name="SeatConfig" component={SeatConfig}/>
+       </Stack.Navigator>
+     </NavigationContainer>
+   );
+ }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: 'row',
     backgroundColor: '#FFF',
-    alignItems: 'center',
-    justifyContent: 'center',
+    
   },
 });
