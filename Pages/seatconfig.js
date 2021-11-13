@@ -5,13 +5,8 @@ import styled from 'styled-components/native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-<<<<<<< HEAD
 // import Dashboard from '../pages/dashboard';
-// import Orderpage from '../pages/orderspage';
-=======
-import Dashboard from '../pages/dashboard';
-import Orderpage from '../pages/orderspage3';
->>>>>>> e15a43585e92c47445c6374f24d2e17dc4a06b33
+// import Orderpage from '../pages/orderspage3';
 
 import NavBar from '../comps/NavBar/index';
 import Button from  '../comps/Button/index';

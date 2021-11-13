@@ -70,11 +70,6 @@ const styles = StyleSheet.create({
   line:{
     height:0,
     width: '90%',
-<<<<<<< HEAD
-    //border: '1px',
-=======
-    // border: '1px',
->>>>>>> e15a43585e92c47445c6374f24d2e17dc4a06b33
     margin: '4%',
     marginTop: '4%',
   },
@@ -85,8 +80,6 @@ const styles = StyleSheet.create({
   },
 
   Title:{
-    // fontWeight: 600,
-    // fontSize: '48px',
     marginLeft: '3%',
   },
 
@@ -97,8 +90,6 @@ const styles = StyleSheet.create({
   },
 
   Subtitle:{
-    // fontWeight: 'normal',
-    // fontSize: '36px',
     marginLeft: '1%',
     marginRight: '1%',
   },
