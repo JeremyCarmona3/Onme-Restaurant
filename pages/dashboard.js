@@ -44,8 +44,6 @@ export default function Dashboard({navigation}) {
             {/* <NewOrder></NewOrder> */}
             <DashCont>
 
-            <AddItemToMenu/>
-
               <NavBar/>
 
               

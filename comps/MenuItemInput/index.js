@@ -7,8 +7,9 @@ const Cont = styled.View`
 
 const Title = styled.Text`
     color: black;
-    font-size: 18px;
-    margin-left: 15px;
+    font-size: 20px;
+    margin-bottom: 2%;
+    margin-left: 1%;
 `;
 
 const InputTextBox = styled.View`
@@ -24,7 +25,6 @@ const InputTextBox = styled.View`
 const Input = styled.TextInput`
     margin-left: 15px;
     font-size: 18px;
-    
 `;
 
 const MeunItem = ({

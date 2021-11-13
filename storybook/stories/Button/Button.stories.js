@@ -16,7 +16,7 @@ import OrderStatsCard from '../../../comps/OrderStatsCard';
 import MenuItemInput from '../../../comps/MenuItemInput';
 import QtyItem from '../../../comps/QtyItem';
 import OpenText from '../../../comps/OpenText';
-import NewOrder from '../../../comps/NewOrder';
+import NewOrderLine from '../../../comps/NewOrderLine';
 
 storiesOf('Comps', module)
   .addDecorator((getStory) => <CenterView>{getStory()}</CenterView>)
@@ -55,7 +55,7 @@ storiesOf('Comps', module)
 ))
 
 .add('NewOrder', () => (
-  <NewOrder />
+  <NewOrderLine />
 ));
 
 
