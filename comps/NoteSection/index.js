@@ -3,36 +3,43 @@ import styled from 'styled-components/native';
 import { StyleSheet, Text, View } from 'react-native';
 
 const Cont = styled.View`
-    width: 321px;
-    height: 188px;
-    background-color: white;
-    borderTopLeftRadius: 20px;
-    borderTopRightRadius: 20px;
+    width: 409px;
+    height: 291px;
+    
+
 `;
 
 const Topbar = styled.View`
-    width: 321px;
-    height: 41px;
-    backgroundColor: #878787;
-    borderTopLeftRadius: 20px;
-    borderTopRightRadius: 20px;
-    justifyContent: center;
+    width: 409px;
+    height: 68px;
+    background-color: #878787 ;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    justify-content: center;
+    padding-left: 5%;
+
 `
 
+const Bottombar = styled.View`
+    width: 409px;
+    height: 233px;
+    background-color: #EEEEEE;
+    padding-left: 5%;
+    padding-top: 5%;
 
-const Title = styled.Text`
-    color: white;
-    font-family: Poppins;
-    fontSize: 16px;
-    marginLeft: 10px;
+`
+
+const Noteheader = styled.Text`
+    font-size: 24px;
+    color: #fff;
+    
 `;
 
-const Textbox = styled.Text`
-    font-family: Poppins;
-    fontSize: 16px;
-    marginLeft: 10px;
-    marginTop: 10px;
-`
+const Notecontent = styled.Text`
+    font-size: 18px;
+    
+`;
+
 
 const NoteSection = ({
    text = "Would you like to be gganbu's?",
@@ -40,9 +47,12 @@ const NoteSection = ({
     return (
     <Cont>
         <Topbar>
-        <Title>NoteSection</Title>
+            <Noteheader>Note Section</Noteheader>
         </Topbar>
-        <Textbox>{text}</Textbox>
+        <Bottombar>
+            <Notecontent>{text}</Notecontent>
+        </Bottombar>
+
     </Cont>
     );
 }
