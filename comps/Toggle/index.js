@@ -18,22 +18,26 @@ const ToggleButton = styled.TouchableOpacity`
     border-radius: 10px;
 `;
 
-const ToggleLeftText = styled.View`
+const ToggleLeftText = styled.TouchableOpacity`
     width: 120px;
     height: 60px;
 
     color: black;
+    background-color: #C4C4C4;
+    border-radius: 10px; 
     font-size:18px;
 
     justify-content: center;
     align-items: center;
 `;
 
-const ToggleRightText = styled.View`
+const ToggleRightText = styled.TouchableOpacity`
     width: 120px;
     height: 60px;
 
     color: black;
+    background-color: #C4C4C4; 
+    border-radius: 10px;
     font-size:18px;
 
     justify-content: center;
@@ -42,12 +46,12 @@ const ToggleRightText = styled.View`
 `;
 
 const Toggle = ({
-
+    backgroundColor = "#C4C4C4",
 }) => {
     return (
         <ToggleContainer>
-            <ToggleLeftText>New</ToggleLeftText>
-            <ToggleRightText>Preparing</ToggleRightText>
+            <ToggleLeftText changeBackgroundColor={backgroundColor}>New</ToggleLeftText>
+            <ToggleRightText changeBackgroundColor={backgroundColor}>Preparing</ToggleRightText>
         </ToggleContainer>
     );
 

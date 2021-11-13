@@ -16,26 +16,26 @@ import Orderpage from './pages/orderspage';
 
 
 //note(alicia):import ___ from..___ then <stackscreem name... comment out other pages to see one page at a time (until the routes are done)
-const Stack = createNativeStackNavigator();
+// const Stack = createNativeStackNavigator();
 
-// export {default} from './storybook'; 
+export {default} from './storybook'; 
 
 
 
-export default function App() {
-  return (
-     <NavigationContainer style={styles.container}>
-      <Stack.Navigator>
+// export default function App() {
+//   return (
+//      <NavigationContainer style={styles.container}>
+//       <Stack.Navigator>
       
-        // {/* <Stack.Screen name="Dashboard" component={Dashboard} /> */}
-        // <Stack.Screen name="Orderpage" component={Orderpage} />
+//         // {/* <Stack.Screen name="Dashboard" component={Dashboard} /> */}
+//         // <Stack.Screen name="Orderpage" component={Orderpage} />
        
         
-      </Stack.Navigator>
+//       </Stack.Navigator>
    
-    </NavigationContainer>
-  );
-}
+//     </NavigationContainer>
+//   );
+// }
 
 const styles = StyleSheet.create({
   container: {
