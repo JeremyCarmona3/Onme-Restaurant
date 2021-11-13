@@ -55,7 +55,7 @@ export default function App({
       <LeftColumn>
         <Title>Seat Configuration</Title>
         <ButtonCont>
-          <Button></Button>
+          <Button buttontext='Save' buttoncolor='#FE4370'></Button>
           <Button></Button>
         </ButtonCont>
       </LeftColumn>
