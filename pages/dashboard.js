@@ -47,7 +47,7 @@ export default function Dashboard({navigation}) {
               <NavBar
                 homeOnPress={() => navigation.navigate('Dashboard')}
                 ordersOnPress={() => navigation.navigate('OrdersPage3')}
-                seatconfigOnPress={() => navigation.navigate('SeatConfig')}
+                seatconfigOnPress={() => navigation.navigate('EditSeatConfig')}
                 menuconfigOnPress={() => navigation.navigate('Menu1')}
                 
               />

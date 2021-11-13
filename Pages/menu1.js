@@ -8,10 +8,15 @@ import Icons from '../comps/MenuIcon';
 
 // export {default} from './storybook'; 
 
-export default function App() {
+export default function App({navigation}) {
   return (
     <View style={styles.container}>
-      <NavBar />
+      <NavBar
+        homeOnPress={() => navigation.navigate('Dashboard')}
+        ordersOnPress={() => navigation.navigate('OrdersPage3')}
+        seatconfigOnPress={() => navigation.navigate('EditSeatConfig')}
+        menuconfigOnPress={() => navigation.navigate('Menu1')}
+      />
       <View style={styles.right_con}>
         <View>
           <Text style={styles.Title}>Menu</Text>

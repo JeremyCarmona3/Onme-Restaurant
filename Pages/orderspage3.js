@@ -126,7 +126,7 @@ const BottomRightItems = styled.View`
 
 
 
-export default function Orderpage({
+export default function Orderpage({navigation}, {
   image1 = require('../assets/nav1.png'),
   Name = "Seong Gi Hun",
   Ordernumber = "Order 456"
@@ -139,7 +139,12 @@ export default function Orderpage({
               <OrderCont>
 
               <OrderContLeft>
-                <NavBar/>
+                <NavBar
+                  homeOnPress={() => navigation.navigate('Dashboard')}
+                  ordersOnPress={() => navigation.navigate('OrdersPage3')}
+                  seatconfigOnPress={() => navigation.navigate('EditSeatConfig')}
+                  menuconfigOnPress={() => navigation.navigate('Menu1')}
+                />
               </OrderContLeft>
 
                 <OrderContCenter>
