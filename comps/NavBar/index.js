@@ -74,19 +74,19 @@ const NavBar = ({
 }) => {
     return (
         <NavCont>
-           <HomeIcon onPress={menuPgOneOnPress} >
+           <HomeIcon onPress={homeOnPress} >
             <NavIcon source={image1} resizeMode="cover" borderRadius="25px" />
            </HomeIcon>
 
-           <OrdersIcon onPress={menuPgTwoOnPress}>
+           <OrdersIcon onPress={ordersOnPress}>
            <NavIcon source={image2} resizeMode="cover" borderRadius="25px" />
            </OrdersIcon>
 
-           <SeatConfigIcon onPress={menuPgThreeOnPress}>
+           <SeatConfigIcon onPress={seatconfigOnPress}>
            <NavIcon source={image3} resizeMode="cover" borderRadius="25px" />
            </SeatConfigIcon>
 
-           <MenuConfigIcon onPress={menuPgFourOnPress}>
+           <MenuConfigIcon onPress={menuconfigOnPress}>
            <NavIcon source={image4} resizeMode="cover" borderRadius="25px" />
            </MenuConfigIcon>
 

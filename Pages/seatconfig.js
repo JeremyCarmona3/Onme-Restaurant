@@ -6,7 +6,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Dashboard from '../pages/dashboard';
-import Orderpage from '../pages/orderspage';
+import Orderpage from '../pages/orderspage3';
 
 import NavBar from '../comps/NavBar/index';
 import Button from  '../comps/Button/index';

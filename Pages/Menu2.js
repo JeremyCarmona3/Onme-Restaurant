@@ -62,14 +62,14 @@ const styles = StyleSheet.create({
   line:{
     height:0,
     width: '90%',
-    border: '1px solid #DADADA',
+    // border: '1px',
     margin: '4%',
     marginTop: '1%',
   },
 
   Title:{
-    fontWeight: 600,
-    fontSize: '48px',
+    // fontWeight: 600,
+    // fontSize: '48px',
     marginLeft: '4%',
   },
 
@@ -78,8 +78,8 @@ const styles = StyleSheet.create({
   },
 
   Subtitle:{
-    fontWeight: 'normal',
-    fontSize: '36px',
+    // fontWeight: 'normal',
+    // fontSize: '36px',
     marginLeft: '4%',
   },
 
