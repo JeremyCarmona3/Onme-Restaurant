@@ -7,19 +7,20 @@ import Button from '.';
 import CenterView from '../CenterView';
 
 import MenuCard from '../../../comps/Card';
+import ButtonGroup from '../../../comps/ButtonGroup';
 import Buttons from '../../../comps/Button';
 import AddItemCard from '../../../comps/AddItemCard';
 import OrderNumberCard from '../../../comps/OrderNumberCard';
 import OrderCosts from '../../../comps/OrderCosts';
 import OrderStatsCard from '../../../comps/OrderStatsCard';
-<<<<<<< HEAD
 import MeunItem from '../../../comps/MenuItem';
 import QtyItem from '../../../comps/QtyItem';
 import OpenText from '../../../comps/OpenText';
-import NewOrder from '../../../comps/NewOrder';
-=======
-import NavBar from '../../../comps/navbar_Min';
->>>>>>> d8936842b9ecfd558c6890253c9c2d1b35fd1209
+// import NewOrder from '../../../comps/NewOrder';
+// import NavBar from '../../../comps/navbar_Min';
+import Toggle from '../../../comps/Toggle';
+import ListItem from '../../../comps/ListItem';
+
 
 storiesOf('Comps', module)
   .addDecorator((getStory) => <CenterView>{getStory()}</CenterView>)
@@ -44,7 +45,11 @@ storiesOf('Comps', module)
   <OrderCosts/>
 ))
 
-<<<<<<< HEAD
+
+.add('ButtonGroup', () => (
+  <ButtonGroup/>
+))
+
 .add('Buttons', () => (
   <Buttons/>
 ))
@@ -57,16 +62,22 @@ storiesOf('Comps', module)
 .add('OpenText', () => (
   <OpenText />
 ))
+
 .add('NewOrder', () => (
   <NewOrder />
-=======
-  .add('Buttons', () => (
-    <Buttons/>
+))
+
+.add('Toggle', () => (
+  <Toggle />
+))
+
+.add('ListItem', () => (
+  <ListItem />
 ))
 
 .add('Navigation', () => (
   <NavBar/>
->>>>>>> d8936842b9ecfd558c6890253c9c2d1b35fd1209
+
 ));
 
 
