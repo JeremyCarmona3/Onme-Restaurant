@@ -7,7 +7,6 @@ const NavCont = styled.View`
     width: 115px;
     background-color: #737373;
     
-
 `;
 
 const MenuItem1 = styled.View`
