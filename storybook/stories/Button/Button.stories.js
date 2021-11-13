@@ -5,7 +5,7 @@ import React from 'react';
 import { Text } from 'react-native';
 import Button from '.';
 import CenterView from '../CenterView';
-
+import SeatMap from '../../../comps/SeatMap';
 import MenuCard from '../../../comps/Card';
 import ButtonGroup from '../../../comps/ButtonGroup';
 import Buttons from '../../../comps/Button';
@@ -23,6 +23,8 @@ import NavBar from '../../../comps/navbar_Min';
 import Toggle from '../../../comps/Toggle';
 import ListItem from '../../../comps/ListItem';
 
+
+import NewOrderLine from '../../../comps/NewOrderLine';
 
 storiesOf('Comps', module)
   .addDecorator((getStory) => <CenterView>{getStory()}</CenterView>)
@@ -47,6 +49,10 @@ storiesOf('Comps', module)
   <OrderCosts/>
 ))
 
+.add('ButtonGroup', () => (
+  <ButtonGroup/>
+))
+
 .add('Buttons', () => (
   <Buttons/>
 ))
@@ -64,8 +70,16 @@ storiesOf('Comps', module)
   <NewOrderLine />
 ))
 
+.add('Toggle', () => (
+  <Toggle />
+))
+
 .add('ListItem', () => (
   <ListItem />
+))
+
+.add('SeatMap', () => (
+  <SeatMap />
 ))
 
 .add('Navigation', () => (
