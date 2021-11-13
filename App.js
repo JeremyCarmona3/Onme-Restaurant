@@ -23,7 +23,14 @@ const Stack = createNativeStackNavigator();
      <NavigationContainer style={styles.container}>
        <Stack.Navigator>
         <Stack.Screen name="Dashboard" component={Dashboard} />
-        <Stack.Screen name="Dashboard" component={Dashboard} />
+        <Stack.Screen name="EditSeatMap" component={EditSeatMap}/>
+        <Stack.Screen name="Menu1" component={Menu1}/>
+        <Stack.Screen name="Menu2" component={Menu2}/>
+        <Stack.Screen name="Menu3" component={Menu3}/>
+        <Stack.Screen name="Menu4" component={Menu4}/>
+        <Stack.Screen name="OrdersPage3" component={OrdersPage3}/>
+        <Stack.Screen name="SeatConfig" component={SeatConfig}/>
+        <Stack.Screen name="EditSeatConfig" component={EditSeatConfig}/>
        </Stack.Navigator>
      </NavigationContainer>
    );
