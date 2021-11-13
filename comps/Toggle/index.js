@@ -1,31 +1,54 @@
 import React from 'react';
 import styled from 'styled-components/native';
 
-const Cont = styled.TouchableOpacity`
-    width:211px;
-    height:42px;
-    background-color: #737373;
-    border-radius: 50px;
-    align-items:center;
-    justify-content: center;
+const ToggleContainer = styled.View`
+    width:245px;
+    height:60px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+
+    flex-direction: row;
+    justify-content: space-between;
 `;
 
-const ButtonText = styled.Text`
- color: white;
- font-size:18px;
+const ToggleButton = styled.TouchableOpacity`
+    width: 120px;
+    height: 60px;
+    background-color: #C4C4C4; 
+    border-radius: 10px;
+`;
 
+const ToggleLeftText = styled.View`
+    width: 120px;
+    height: 60px;
+
+    color: black;
+    font-size:18px;
+
+    justify-content: center;
+    align-items: center;
+`;
+
+const ToggleRightText = styled.View`
+    width: 120px;
+    height: 60px;
+
+    color: black;
+    font-size:18px;
+
+    justify-content: center;
+    align-items: center;
+ 
 `;
 
 const Toggle = ({
-    buttonwidth = 211,
-    buttonheight=  42,
-    buttontext ="Edit Menu",
-    buttoncolor = "#737373"
+
 }) => {
     return (
-        <Cont background-color={buttoncolor} width={buttonwidth} height={buttonheight}>
-            <ButtonText>{buttontext}</ButtonText>
-        </Cont>
+        <ToggleContainer>
+            <ToggleLeftText>New</ToggleLeftText>
+            <ToggleRightText>Preparing</ToggleRightText>
+        </ToggleContainer>
     );
 
 }

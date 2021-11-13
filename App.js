@@ -27,12 +27,8 @@ export {default} from './storybook';
 //     <NavigationContainer style={styles.container}>
 //       <Stack.Navigator>
       
-<<<<<<< HEAD
-//         <Stack.Screen name="Dashboard" component={Dashboard} />
-=======
-        {/* <Stack.Screen name="Dashboard" component={Dashboard} /> */}
-        <Stack.Screen name="Orderpage" component={Orderpage} />
->>>>>>> 2cbf1e589fae0853a5e5cdccd178e45b583ecc17
+        // {/* <Stack.Screen name="Dashboard" component={Dashboard} /> */}
+        // <Stack.Screen name="Orderpage" component={Orderpage} />
        
         
 //       </Stack.Navigator>
