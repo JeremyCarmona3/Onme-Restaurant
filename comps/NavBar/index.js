@@ -10,35 +10,32 @@ const NavCont = styled.View`
 
 `;
 
-const MenuItem1 = styled.View`
-    background-color: #fad;
+const MenuItem1 = styled.TouchableOpacity`
     height: 16.6666%;
     justify-content: center;
     align-items: center;
     `;
 
-const MenuItem2 = styled.View`
+const MenuItem2 = styled.TouchableOpacity`
     height: 16.6666%;
     justify-content: center;
     align-items: center;
     `;
 
-const MenuItem3 = styled.View`
+const MenuItem3 = styled.TouchableOpacity`
     height: 16.6666%;
-    background-color: #fad;
     justify-content: center;
     align-items: center;
     `;
 
-const MenuItem4 = styled.View`
+const MenuItem4 = styled.TouchableOpacity`
     height: 16.6666%;
     justify-content: center;
     align-items: center;
 `;
 
-const MenuItem5 = styled.View`
+const MenuItem5 = styled.TouchableOpacity`
     height: 16.6666%;
-    background-color: #fad;
     justify-content: center;
     align-items: center;
     `;
@@ -50,8 +47,8 @@ const MenuItem6 = styled.View`
 `;
 
 const NavIcon = styled.ImageBackground`
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     
 `;
 
