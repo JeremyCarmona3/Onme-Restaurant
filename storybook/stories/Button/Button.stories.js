@@ -5,7 +5,7 @@ import React from 'react';
 import { Text } from 'react-native';
 import Button from '.';
 import CenterView from '../CenterView';
-
+import SeatMap from '../../../comps/SeatMap';
 import MenuCard from '../../../comps/Card';
 import ButtonGroup from '../../../comps/ButtonGroup';
 import Buttons from '../../../comps/Button';
@@ -20,6 +20,7 @@ import OpenText from '../../../comps/OpenText';
 // import NavBar from '../../../comps/navbar_Min';
 import Toggle from '../../../comps/Toggle';
 import ListItem from '../../../comps/ListItem';
+
 
 
 storiesOf('Comps', module)
@@ -44,7 +45,6 @@ storiesOf('Comps', module)
 .add('OrderCosts', () => (
   <OrderCosts/>
 ))
-
 
 .add('ButtonGroup', () => (
   <ButtonGroup/>
@@ -73,6 +73,10 @@ storiesOf('Comps', module)
 
 .add('ListItem', () => (
   <ListItem />
+))
+
+.add('SeatMap', () => (
+  <SeatMap />
 ))
 
 .add('Navigation', () => (
