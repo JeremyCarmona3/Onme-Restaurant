@@ -35,7 +35,6 @@ const RightColumn = styled.View`
 
 export default function App({
 
-
 }) {
   return (
     <View style={styles.container}>
