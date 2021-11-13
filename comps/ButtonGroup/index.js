@@ -9,7 +9,7 @@ const Cont = styled.View`
     flex-direction: row;
     border-radius: 10px;
     
-    border: 1px lightgrey;
+    //border: 1px lightgrey;
     
 `;
 

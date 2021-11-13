@@ -29,13 +29,13 @@ export default function App() {
           <Buttons textcolor="black" buttoncolor="#B5B5B5" buttontext="ADD CATEGORY" />
         </View>
         <View  style={styles.Sub_edit}>
-          <Icons iconimage={require('./assets/removeitemicon.png')} iconheight="36px" iconwidth="36px" />
+          <Icons iconimage={require('../assets/removeitemicon.png')} iconheight="36px" iconwidth="36px" />
           <Text style={styles.Subtitle}>Popular Items</Text>
-          <Icons iconimage={require('./assets/popularitemicon.png')} iconheight="39px" iconwidth="39px" />
+          <Icons iconimage={require('../assets/popularitemicon.png')} iconheight="39px" iconwidth="39px" />
         </View>
         <View style={styles.card_con}>
           <AddItemCard />
-          <MenuCard itemname="Martini a la Ravioli" image={require('./assets/martini.png')} />
+          <MenuCard itemname="Martini a la Ravioli" image={require('../assets/martini.png')} />
           <MenuCard />
         </View>
       </View>
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
   line:{
     height:0,
     width: '90%',
-    border: '1px solid #DADADA',
+    //border: '1px',
     margin: '4%',
     marginTop: '4%',
   },
@@ -81,8 +81,8 @@ const styles = StyleSheet.create({
   },
 
   Title:{
-    fontWeight: 600,
-    fontSize: '48px',
+    // fontWeight: 600,
+    // fontSize: '48px',
     marginLeft: '3%',
   },
 
@@ -93,8 +93,8 @@ const styles = StyleSheet.create({
   },
 
   Subtitle:{
-    fontWeight: 'normal',
-    fontSize: '36px',
+    // fontWeight: 'normal',
+    // fontSize: '36px',
     marginLeft: '1%',
     marginRight: '1%',
   },
