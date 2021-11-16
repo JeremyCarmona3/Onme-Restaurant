@@ -12,7 +12,8 @@ import OpenText from '../comps/OpenText';
 import OrderCosts from '../comps/OrderCosts';
 import Preptime from '../comps/OrderInfoPrep';
 import NoteSection from '../comps/NoteSection';
-
+// import Toggle from '../comps/Toggle';
+import QtyItem from '../comps/QtyItem';
 
 
 //divs 
@@ -21,7 +22,6 @@ const OrderCont = styled.View`
     flex-direction: row;
     width: 100%;
     height: 100%;
-    background-color: #fad;
 `;
 
 const OrderContLeft = styled.View`
@@ -31,7 +31,6 @@ const OrderContCenter = styled.View`
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    background-color: red;
     flex:2;
 
 /* border-radius: 15px 0 0 15px; */
@@ -39,6 +38,9 @@ const OrderContCenter = styled.View`
 
 const CenterItemCont = styled.View`
   height: 100%;
+  background-color: #E2E2E2;
+  width: 100%;
+  align-items: center;
 `;
 
 const OrderContRight = styled.View`
@@ -73,7 +75,7 @@ const Firstitem = styled.View`
   flex-direction: row;
   height: 15%;
   justify-content: space-between;
-  background-color: blue;
+
 
 `;
 
@@ -87,8 +89,8 @@ padding: 2%;
 
 const HeaderCont = styled.View`
 
-margin-left: 5%;
-background-color: brown;
+margin-left: 2%;
+
 `;
 
 const NavIcon = styled.ImageBackground`
@@ -103,7 +105,7 @@ const TopBottomCont = styled.View`
 
 const TopItems = styled.View`
   justify-content: space-around;
-  background-color: #94CC81;
+ 
 `;
 
 const MiddleItems = styled.View`
@@ -113,7 +115,7 @@ const MiddleItems = styled.View`
 const BottomItems = styled.View`
   flex-direction:row;
   justify-content: space-between;
-  background-color: tomato;
+
 `;
 
 const BottomRightItems = styled.View`
@@ -150,6 +152,7 @@ export default function Orderpage({navigation}, {
                 <OrderContCenter>
                   <CenterItemCont>
                     <Header>Orders</Header>
+                      {/* <Toggle/> */}
                       <OrderNumberCard/>
                       <OrderNumberCard/>
                  </CenterItemCont>
@@ -189,7 +192,7 @@ export default function Orderpage({navigation}, {
                     </MiddleItems>
 
                     <Firstitem>
-                    <Text>Qty:1 Martini a la Ravioli</Text>
+                    <QtyItem/>
                     </Firstitem>
                </TopItems>
 
