@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
     marginLeft: '1%',
     marginRight: '1%',
   },
-
+ 
   card_con:{
     flexDirection: 'row',
     margin: '4%',
