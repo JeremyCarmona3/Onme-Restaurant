@@ -52,11 +52,23 @@ const OrderContRight = styled.View`
     /* border-radius: 15px 0 0 15px; */
 `;
 
+
+
 //center items
 
 const Header = styled.Text`
 font-size: 30px;
 font-weight: 600;
+`;
+
+const HeaderBox = styled.View`
+justify-content: left;
+`;
+
+
+const OrderItemsCont = styled.View`
+height: 30%;
+justify-content: space-around;
 `;
 
 //right items
@@ -75,6 +87,7 @@ const Firstitem = styled.View`
   flex-direction: row;
   height: 15%;
   justify-content: space-between;
+  align-items: center;
 
 
 `;
@@ -129,7 +142,7 @@ const BottomRightItems = styled.View`
 
 
 export default function Orderpage({navigation}, {
-  image1 = require('../assets/nav1.png'),
+  image1 = require('../assets/profile1.jpg'),
   Name = "Seong Gi Hun",
   Ordernumber = "Order 456"
 
@@ -151,10 +164,17 @@ export default function Orderpage({navigation}, {
 
                 <OrderContCenter>
                   <CenterItemCont>
+
                     <Header>Orders</Header>
+
                       {/* <Toggle/> */}
+                    <OrderItemsCont>
                       <OrderNumberCard/>
                       <OrderNumberCard/>
+                    </OrderItemsCont>
+           
+                      
+
                  </CenterItemCont>
                 </OrderContCenter>
 
