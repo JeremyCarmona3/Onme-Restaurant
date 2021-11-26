@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 import { StyleSheet, Text, View } from 'react-native';
 
 const Cont = styled.View`
-    width: 621px;
+    width: 100%;
     height: 56px;
     background: #FFFFFF;
     border-radius: 20px;

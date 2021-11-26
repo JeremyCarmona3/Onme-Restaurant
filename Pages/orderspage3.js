@@ -12,7 +12,8 @@ import OpenText from '../comps/OpenText';
 import OrderCosts from '../comps/OrderCosts';
 import Preptime from '../comps/OrderInfoPrep';
 import NoteSection from '../comps/NoteSection';
-
+// import Toggle from '../comps/Toggle';
+import QtyItem from '../comps/QtyItem';
 
 
 //divs 
@@ -21,7 +22,6 @@ const OrderCont = styled.View`
     flex-direction: row;
     width: 100%;
     height: 100%;
-    background-color: #fad;
 `;
 
 const OrderContLeft = styled.View`
@@ -31,7 +31,6 @@ const OrderContCenter = styled.View`
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    background-color: red;
     flex:2;
 
 /* border-radius: 15px 0 0 15px; */
@@ -39,6 +38,9 @@ const OrderContCenter = styled.View`
 
 const CenterItemCont = styled.View`
   height: 100%;
+  background-color: #E2E2E2;
+  width: 100%;
+  align-items: center;
 `;
 
 const OrderContRight = styled.View`
@@ -50,11 +52,23 @@ const OrderContRight = styled.View`
     /* border-radius: 15px 0 0 15px; */
 `;
 
+
+
 //center items
 
 const Header = styled.Text`
 font-size: 30px;
 font-weight: 600;
+`;
+
+const HeaderBox = styled.View`
+justify-content: left;
+`;
+
+
+const OrderItemsCont = styled.View`
+height: 30%;
+justify-content: space-around;
 `;
 
 //right items
@@ -73,7 +87,8 @@ const Firstitem = styled.View`
   flex-direction: row;
   height: 15%;
   justify-content: space-between;
-  background-color: blue;
+  align-items: center;
+
 
 `;
 
@@ -87,8 +102,8 @@ padding: 2%;
 
 const HeaderCont = styled.View`
 
-margin-left: 5%;
-background-color: brown;
+margin-left: 2%;
+
 `;
 
 const NavIcon = styled.ImageBackground`
@@ -103,7 +118,7 @@ const TopBottomCont = styled.View`
 
 const TopItems = styled.View`
   justify-content: space-around;
-  background-color: #94CC81;
+ 
 `;
 
 const MiddleItems = styled.View`
@@ -113,7 +128,7 @@ const MiddleItems = styled.View`
 const BottomItems = styled.View`
   flex-direction:row;
   justify-content: space-between;
-  background-color: tomato;
+
 `;
 
 const BottomRightItems = styled.View`
@@ -127,7 +142,7 @@ const BottomRightItems = styled.View`
 
 
 export default function Orderpage({navigation}, {
-  image1 = require('../assets/nav1.png'),
+  image1 = require('../assets/profile1.jpg'),
   Name = "Seong Gi Hun",
   Ordernumber = "Order 456"
 
@@ -149,9 +164,17 @@ export default function Orderpage({navigation}, {
 
                 <OrderContCenter>
                   <CenterItemCont>
+
                     <Header>Orders</Header>
+
+                      {/* <Toggle/> */}
+                    <OrderItemsCont>
                       <OrderNumberCard/>
                       <OrderNumberCard/>
+                    </OrderItemsCont>
+           
+                      
+
                  </CenterItemCont>
                 </OrderContCenter>
 
@@ -189,7 +212,7 @@ export default function Orderpage({navigation}, {
                     </MiddleItems>
 
                     <Firstitem>
-                    <Text>Qty:1 Martini a la Ravioli</Text>
+                    <QtyItem/>
                     </Firstitem>
                </TopItems>
 

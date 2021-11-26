@@ -8,6 +8,7 @@ const Cont = styled.TouchableOpacity`
     border-radius: 10px;
     justify-content: center;
     padding: 5%;
+
 `;
 
 const OrderText = styled.Text`
