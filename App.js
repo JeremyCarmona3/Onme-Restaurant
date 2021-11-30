@@ -8,9 +8,9 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Dashboard from './pages/dashboard';
 import EditSeatConfig from './pages/editseatconfig';
 import Menu1 from './pages/menu1';
-import Menu2 from './pages/Menu2';
+import Menu2 from './pages/menu2';
 import Menu3 from './pages/menu3';
-import Menu4 from './pages/Menu4';
+import Menu4 from './pages/menu4';
 import OrdersPage3 from './pages/orderspage3';
 import SeatConfig from './pages/seatconfig';
 
