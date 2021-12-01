@@ -100,10 +100,11 @@ const TapText =styled.Text`
 
 const PinkOrderBar = ({
     ordernumber= "Order #456",
-    date= "2 October 2021, 9:00pm"
+    date= "2 October 2021, 9:00pm",
+    onPress = () => {}
 }) => {
     return (
-        <Cont>
+        <Cont onPress={onPress}>
             <OrderDateCont>
             <OrderNum>{ordernumber}</OrderNum>
             <Date>{date}</Date>

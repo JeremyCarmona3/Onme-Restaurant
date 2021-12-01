@@ -59,7 +59,7 @@ export default function Dashboard({navigation}) {
                 <NewOrderLine2>
                   <NewOrderLine/>
                 </NewOrderLine2>
-                <PinkOrderBar/>
+                <PinkOrderBar onPress={() => navigation.navigate('OrdersPage3')} />
               </MiddleSection>
 
               <BottomSection>

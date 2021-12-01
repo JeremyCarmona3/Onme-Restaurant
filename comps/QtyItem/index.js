@@ -19,14 +19,14 @@ const Left = styled.View`
 `
 
 const Qty = styled.Text`
-    font-family: Poppins;
+    /* font-family: Poppins; */
     font-Size: 16px;
     font-Weight: bold;
     margin-Left: 15px;
 `
 
 const Item = styled.Text`
-    font-Family: Poppins;
+    /* font-Family: Poppins; */
     font-Size: 16px;
     margin-Left: 20px;
 `
@@ -37,7 +37,7 @@ const Right = styled.View`
 `
 
 const Cost = styled.Text`
-    font-Family: Poppins;
+    /* font-Family: Poppins; */
     font-Size: 16px;
     font-Weight: bold;
     margin-Right: 15px;

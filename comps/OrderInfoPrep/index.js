@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components/native';
-import Orderpage from '../../pages/orderspage3';
 
 const Prepcont = styled.View`  
     display: flex;

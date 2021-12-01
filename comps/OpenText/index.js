@@ -8,12 +8,12 @@ const Cont = styled.View``;
 const Opentxt = styled.Text`
     font-size: 30px;
     font-weight: bold;
-    font-family: "poppins";
+    /* font-family: "poppins"; */
 `;
 
 const Closetxt = styled.Text`
     font-size: 24px;    
-    font-family: "poppins";
+    /* font-family: "poppins"; */
 `;
 
 const OpenText = ({
