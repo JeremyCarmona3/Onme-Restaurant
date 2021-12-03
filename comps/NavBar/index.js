@@ -5,8 +5,7 @@ const NavCont = styled.View`
     display: flex;
     height: 100%;
     width: 115px;
-    background-color: #737373;
-    
+    background-color: #2E2E2E;
 `;
 
 const HomeIcon = styled.TouchableOpacity`
@@ -48,7 +47,6 @@ const Logo = styled.View`
 const NavIcon = styled.ImageBackground`
     height: 50px;
     width: 50px;
-    
 `;
 
 
@@ -75,27 +73,27 @@ const NavBar = ({
     return (
         <NavCont>
            <HomeIcon onPress={homeOnPress} >
-            <NavIcon source={image1} resizeMode="cover" borderRadius="25px" />
+            <NavIcon source={image1} resizeMode="cover" />
            </HomeIcon>
 
            <OrdersIcon onPress={ordersOnPress}>
-           <NavIcon source={image2} resizeMode="cover" borderRadius="25px" />
+           <NavIcon source={image2} resizeMode="cover" />
            </OrdersIcon>
 
            <SeatConfigIcon onPress={seatconfigOnPress}>
-           <NavIcon source={image3} resizeMode="cover" borderRadius="25px" />
+           <NavIcon source={image3} resizeMode="cover" />
            </SeatConfigIcon>
 
            <MenuConfigIcon onPress={menuconfigOnPress}>
-           <NavIcon source={image4} resizeMode="cover" borderRadius="25px" />
+           <NavIcon source={image4} resizeMode="cover" />
            </MenuConfigIcon>
 
            <SettingsIcon>
-           <NavIcon source={image5} resizeMode="cover" borderRadius="25px" />
+           <NavIcon source={image5} resizeMode="cover" />
            </SettingsIcon>
 
            <Logo>
-           <NavIcon source={image6} resizeMode="cover" borderRadius="25px" />
+           <NavIcon source={image6} resizeMode="cover" />
            </Logo>
         </NavCont>
     )

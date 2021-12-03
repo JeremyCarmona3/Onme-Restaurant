@@ -34,16 +34,13 @@ const ItemPrice = styled.Text`
 `;
 
 const PopItemIcon = styled.Image`
-    width: ${props => props.imgitemwidth};
-    height: ${props => props.imgitemheigth};
     align-self: flex-end;
     margin-right: 5%;
+    margin-top: -5%;
     border-radius: 15px;
 `;
 
 const MenuCard = ({
-    imgitemwidth = "17%",
-    imgitemheigth = "13%",
     image = require('../../assets/greenteashooter.png'),
     itemname = "Green Tea Shot",
     itemprice = "$5.00",
@@ -51,7 +48,7 @@ const MenuCard = ({
 }) => {
     return (
         <Cont>
-            <MenuImage source={image} imgitemwidth={imgitemwidth} imgitemheigth={imgitemheigth}></MenuImage>
+            <MenuImage source={image} ></MenuImage>
             <ItemName>{itemname}</ItemName>
             <ItemPrice>{itemprice}</ItemPrice>
             <PopItemIcon source={popularitem}></PopItemIcon>

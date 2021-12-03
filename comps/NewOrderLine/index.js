@@ -1,39 +1,13 @@
 import React from 'react';
 import styled from 'styled-components/native';
-
-// const Line = styled.View`
-//     border-width: "1px";
-//     border-color: "#DADADA";
-//     width: "1060px";
-//     height: "3604px";
-// `;
-
-// const NewOrder = ({
-//    newOrderText = "New Orders",
-//    newOrderSize = "24px",
-//    newOrderWeight = "400",
-//    newOrderColor = "black",
-//    line = ""
-// }) => {
-//     return (
-//         <NewOrder 
-//             orderSize={newOrderSize}
-//             orderWeight={newOrderWeight}
-//             orderColor={newOrderColor}
-//         >
-//            <newOrderText>{newOrderText}</newOrderText>
-//            <Line>{line}</Line>
-//         </NewOrder>
-//     );
-// }
-
-// export default NewOrder;
+import { useFonts } from 'expo-font';
 
 const Cont = styled.View`
 `;
 
 const Heading = styled.Text`
-    font-size: 35px;
+    font-size: 30px;
+    font-family: "PoppinsRegular";
 `;
 
 const Line = styled.View`
@@ -46,6 +20,17 @@ const NewOrderLine =({
     headingtext = 'New Orders',
 
 }) => {
+    const [loaded] = useFonts({
+        PoppinsRegular: require('../../assets/fonts/Poppins-Regular.ttf'),
+        PoppinsLight: require('../../assets/fonts/Poppins-Light.ttf'),
+        PoppinsMedium: require('../../assets/fonts/Poppins-Medium.ttf'),
+        PoppinsSemiBold: require('../../assets/fonts/Poppins-SemiBold.ttf'),
+        PoppinsBold: require('../../assets/fonts/Poppins-Bold.ttf')
+      });
+    
+      if (!loaded) {
+        return null;
+      }
     return (
         <Cont>
             <Heading>{headingtext}</Heading>
