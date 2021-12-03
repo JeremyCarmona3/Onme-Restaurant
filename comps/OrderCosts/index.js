@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/native';
+import { useFonts } from 'expo-font';
 
 const Cont = styled.View`
     width: 351px;
@@ -10,48 +11,44 @@ const Cont = styled.View`
 
 const SubTotal = styled.Text`
     color: #5B5B5B;
-    font-weight: bold;
     font-size: 24px;
-    
+    font-family: "PoppinsMedium";
 `;
 
 const Tax = styled.Text`
     color: #5B5B5B;
-    font-weight: bold;
     font-size: 24px;
-
+    font-family: "PoppinsMedium";
 `;
 
 const Tip = styled.Text`
     color: #5B5B5B;
-    font-weight: bold;
     font-size: 24px;
-
+    font-family: "PoppinsMedium";
 `;
 
 const Total = styled.Text`
-    font-weight: bold;
     font-size: 24px;
-    
+    font-family: "PoppinsBold";
 `;
 
 const LeftCol = styled.View`
+    justify-content: space-between;
 `;
 
 const RightCol = styled.View`
+    justify-content: space-between;
 `;
 
 const Costs= styled.Text`
     color: #5B5B5B;
-    font-weight: bold;
     font-size: 24px;
-
+    font-family: "PoppinsMedium";
 `;
 
 const Costs2 = styled.Text`
-    font-weight: bold;
     font-size: 24px;
-
+    font-family: "PoppinsBold";
 `;
 
 const OrderCosts = ({
@@ -61,6 +58,17 @@ const OrderCosts = ({
     totalprice = "$7.20",
 
 }) => {
+    const [loaded] = useFonts({
+        PoppinsRegular: require('../../assets/fonts/Poppins-Regular.ttf'),
+        PoppinsLight: require('../../assets/fonts/Poppins-Light.ttf'),
+        PoppinsMedium: require('../../assets/fonts/Poppins-Medium.ttf'),
+        PoppinsSemiBold: require('../../assets/fonts/Poppins-SemiBold.ttf'),
+        PoppinsBold: require('../../assets/fonts/Poppins-Bold.ttf')
+      });
+    
+      if (!loaded) {
+        return null;
+      }
     return (
         <Cont>
             <LeftCol>

@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 import styled from 'styled-components/native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -15,21 +15,22 @@ import SeatMap from '../comps/SeatMap/index';
 
 //header text
 const Title = styled.Text`
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
-  width: 470px;
-  padding: 10px;
 
 `;
 
 const LeftColumn = styled.View`
   flex: 1;
   padding: 20px;
+  width: 100%;
 `;
 
 const ButtonCont = styled.View`
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+  margin-top: 15px;
 `;
 
 const RightColumn = styled.View`
@@ -42,26 +43,25 @@ const RightColumn = styled.View`
 
 export default function App({navigation}) {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <NavBar
         homeOnPress={() => navigation.navigate('Dashboard')}
         ordersOnPress={() => navigation.navigate('OrdersPage3')}
-        seatconfigOnPress={() => navigation.navigate('SeatConfig')}
+        seatconfigOnPress={() => navigation.navigate('EditSeatConfig')}
         menuconfigOnPress={() => navigation.navigate('Menu1')}
       />
 
-      {/* <LeftColumn>
-        <Title>Seat Configuration</Title>
+      <LeftColumn>
+        <Title>Seating Configuration</Title>
         <ButtonCont>
-          <Button buttontext='Save' buttoncolor='#FE4370'></Button>
-          <Button></Button>
+          <Button buttontext='SAVE' buttoncolor='#FE4370'></Button>
         </ButtonCont>
       </LeftColumn>
 
       <RightColumn>
         <SeatMap></SeatMap>
-      </RightColumn> */}
-    </View>
+      </RightColumn>
+    </SafeAreaView>
   );
 }
 

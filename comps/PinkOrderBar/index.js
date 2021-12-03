@@ -1,64 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/native';
-
-
-// const Cont = styled.View`
-//     width: 832px;
-//     height: 86px;
-//     background: #FE4370;
-//     border-Radius: 10px;
-//     align-Items: center;
-//     flex-direction: row;
-// `;
-
-// const Left = styled.View`
-//     flex:1;
-//     align-Items: flex-start;
-// `
-
-// const Order = styled.Text`
-//     margin-Left: 15px;
-//     font-Size: 24px;
-//     color: white;
-//     font-Family: Poppins;
-// `
-
-// const Time = styled.Text`
-//     margin-Left: 15px;
-//     color: white;
-//     font-Family: Poppins;
-//     font-Size: 11px;
-// `
-
-// const Right = styled.View`
-//     flex: 1;
-//     align-Items: flex-end;
-// `
-
-// const Button = styled.Text`
-//     margin-Right: 15px;
-//     color: white;
-//     font-Family: Poppins;
-//     font-Size: 24px;
-// `
-
-// const OrderDisplay = ({
-//     order = "Order #456",
-//    time = "2 October 2021, 9:00pm",
-//    button = "tap to view"
-// }) => {
-//     return (
-//     <Cont>
-//         <Left>
-//             <Order>{order}</Order>
-//             <Time>{time}</Time>
-//         </Left>
-//         <Right>
-//             <Button>{button}</Button>
-//         </Right>
-//     </Cont>
-//     );
-// }
+import { useFonts } from 'expo-font';
 
 const Cont = styled.TouchableOpacity`
     width: 1000px;
@@ -76,11 +18,12 @@ const Cont = styled.TouchableOpacity`
 const OrderNum = styled.Text`
     color: white;
     font-size: 25px;
-    font-weight:bold;
+    font-family: "PoppinsSemiBold";
 `;
 
 const Date = styled.Text`
     color: white;
+    font-family: "PoppinsRegular";
 `;
 
 const OrderDateCont = styled.View`
@@ -96,13 +39,25 @@ const TapText =styled.Text`
     font-size: 25px;
     justify-content: center;
     margin-top: 8px;
+    font-family: "PoppinsRegular";
 `;
 
 const PinkOrderBar = ({
-    ordernumber= "Order #456",
+    ordernumber= "Order #16",
     date= "2 October 2021, 9:00pm",
     onPress = () => {}
 }) => {
+    const [loaded] = useFonts({
+        PoppinsRegular: require('../../assets/fonts/Poppins-Regular.ttf'),
+        PoppinsLight: require('../../assets/fonts/Poppins-Light.ttf'),
+        PoppinsMedium: require('../../assets/fonts/Poppins-Medium.ttf'),
+        PoppinsSemiBold: require('../../assets/fonts/Poppins-SemiBold.ttf'),
+        PoppinsBold: require('../../assets/fonts/Poppins-Bold.ttf')
+      });
+    
+      if (!loaded) {
+        return null;
+      }
     return (
         <Cont onPress={onPress}>
             <OrderDateCont>

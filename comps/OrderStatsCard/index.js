@@ -1,10 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/native';
-// import { useFonts } from 'expo-font';
-
-// const [loaded] = useFonts({
-//     Poppins: require('../../assets/fonts/Poppins-Regular.ttf'),
-//   });
+import { useFonts } from 'expo-font';
 
 const Cont = styled.TouchableOpacity`
     width:476px;
@@ -20,13 +16,13 @@ const Cont = styled.TouchableOpacity`
 
 const TotalNumberCus = styled.Text`
     color: #8A8A8A;
-    font-weight: bold;
+    font-family: "PoppinsSemiBold";
     font-size: 24px;
     margin-bottom: 5%;
 `;
 
 const Number = styled.Text`
-    font-weight: bold;
+    font-family: "PoppinsSemiBold";
     font-size: 72px;
 `;
 
@@ -42,6 +38,17 @@ const OrderStatsCard = ({
     totnumcus = "TOTAL CUSTOMERS SERVED",
     num = "15",
 }) => {
+    const [loaded] = useFonts({
+        PoppinsRegular: require('../../assets/fonts/Poppins-Regular.ttf'),
+        PoppinsLight: require('../../assets/fonts/Poppins-Light.ttf'),
+        PoppinsMedium: require('../../assets/fonts/Poppins-Medium.ttf'),
+        PoppinsSemiBold: require('../../assets/fonts/Poppins-SemiBold.ttf'),
+        PoppinsBold: require('../../assets/fonts/Poppins-Bold.ttf')
+      });
+    
+      if (!loaded) {
+        return null;
+      }
     return (
         <Cont>
             <TotalNumberCus>{totnumcus}</TotalNumberCus>

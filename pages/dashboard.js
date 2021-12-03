@@ -59,7 +59,9 @@ export default function Dashboard({navigation}) {
                 <NewOrderLine2>
                   <NewOrderLine/>
                 </NewOrderLine2>
-                <PinkOrderBar onPress={() => navigation.navigate('OrdersPage3')} />
+                <PinkOrderBar 
+                  onPress={() => navigation.navigate('OrdersPage3')} 
+                  date="3 December 2021, 6:00PM"/>
               </MiddleSection>
 
               <BottomSection>

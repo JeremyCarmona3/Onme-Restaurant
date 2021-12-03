@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import NavBar from '../comps/NavBar';
 import Buttons from '../comps/Button';
 import MenuCard from '../comps/Card';
@@ -10,7 +10,7 @@ import Icons from '../comps/MenuIcon';
 
 export default function App({navigation}) {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <NavBar
         homeOnPress={() => navigation.navigate('Dashboard')}
         ordersOnPress={() => navigation.navigate('OrdersPage3')}
@@ -34,7 +34,7 @@ export default function App({navigation}) {
         </View>
       </View>
       
-    </View>
+    </SafeAreaView>
   );
 }
 
@@ -65,14 +65,11 @@ const styles = StyleSheet.create({
   line:{
     height:0,
     width: '90%',
-    // border: '1px',
     margin: '4%',
     marginTop: '1%',
   },
 
   Title:{
-    // fontWeight: 600,
-    // fontSize: '48px',
     marginLeft: '4%',
   },
 
@@ -81,8 +78,6 @@ const styles = StyleSheet.create({
   },
 
   Subtitle:{
-    // fontWeight: 'normal',
-    // fontSize: '36px',
     marginLeft: '4%',
   },
 
